@@ -1,7 +1,21 @@
 Nettsidene:
 index: should have a general introduction with at least one relevant image
-page2:
-page3:
+page2: 
+    Accessibility- 
+    Kort presentasjon av tilgjengelighet for nettstedet ditt. 
+    Test nettstedet ditt med en automatisk test. 
+    Skriv en veldig kort tekst (ca. 400-500 ord) om hvordan du testet koden for tilgjengelighet ved å bruke denne automatiserte testen. 
+    Fortell oss hvordan du sjekket, og kodevalg du tok for universell utforming utover det en automatisert test kan fortelle deg. 
+    Du anbefales å bruke skjermbilder fra testsiden og av koden din – mangel på bilder kan påvirke poengsummen din.
+
+page3: 
+    Topical - 
+    Copy a short text (anywhere from 300 to 1000 words) from DATA1100 Technology and Society for Programmers or other subject you have completed. (Or write a new, short text.)
+    Add images (if there are none). Remember that in Norwegian copyright law, photographer must always be included. (May be organisation, e.g."Photo: Scanpix", can be in the code, hence invisible on the page itself.)
+    Add headings (if there are none).
+    Add links (if there are none). This text should have multiple links to external sites with relevant information. We shall not grade you on how relevant the information you link to is, but we expect several links and we expect it to be easy to understand before clicking what information you lead us to.
+    If you wish to show off some skills, but found that difficult with the other pages, you can make this (or another) page different from the others, with a distinct visual of functional identity.
+
 page4:
 
 Gruppeoppgaver
@@ -9,3 +23,10 @@ Footer
 Grid
 Tekst
 Css
+
+Kommentarer i koden
+    Ethvert semantisk element fortjener en superkort kommentar om hva det er
+    Enhver CSS-velger (i CSS, ikke når den brukes i HTML) fortjener en kommentar, i det minste en beskrivelse
+    Enhver kode som brukes i skalering eller respons på skjermstørrelse, fortjener en kommentar
+    Hovedhensikten med kommentarene bør være å hjelpe en fremtidig utvikler til å overta prosjektet ditt og utvikle det videre; 
+    for meg hjelper det med å luke ut de mest åpenbare problemene med kopiert kode uten
