@@ -18,7 +18,7 @@ page3:
 
 page4:
     Forslag: Hvor finner man grupperom eller steder  å jobbe med skole i p35? bilder i hovedfokus med litt tekst om hvor de ligger i  bygget
-    
+
     The remaining (1 or 2) pages should have images and headings presenting a place or an aspect of the campus/ building, e.g. a canteen; the text may be "dummy text" — see below
 
 Gruppeoppgaver
@@ -29,8 +29,10 @@ Gruppeoppgaver
     - Tekst - dummy tekst
     - ta bilder fra bygget selv så vi slepper copyright
     - Css
+    - egen css til randoms
     - Accessibility
     - Topical
+
 
 Kommentarer i koden
     Ethvert semantisk element fortjener en superkort kommentar om hva det er
