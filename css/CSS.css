@@ -14,3 +14,11 @@
 footer {
     background-color: rgb(83, 76, 76);
 }
+
+
+.forside-bilde {
+    background-image: url("../pictures/testebilde.jpeg");
+    background-size: cover; /* stretches the image from side to side, top to bottom hentet fra Tengel */
+    width: 90vw;
+    height: 60vw;
+}
