@@ -19,10 +19,12 @@ page3:
 page4:
 
 Gruppeoppgaver
-Footer
-Grid
-Tekst
-Css
+    - Footer
+    - Grid
+    - Tekst
+    - Css
+    - Accessibility
+    - Topical
 
 Kommentarer i koden
     Ethvert semantisk element fortjener en superkort kommentar om hva det er
@@ -30,3 +32,6 @@ Kommentarer i koden
     Enhver kode som brukes i skalering eller respons på skjermstørrelse, fortjener en kommentar
     Hovedhensikten med kommentarene bør være å hjelpe en fremtidig utvikler til å overta prosjektet ditt og utvikle det videre; 
     for meg hjelper det med å luke ut de mest åpenbare problemene med kopiert kode uten
+
+Dummy text
+    Apart from the pages "Accessibility" and "Topical", you may use a Lorem-ipsum text. We shall not read the other texts, but we shall look for relevant and correct use of headings, links and <picture>/ <img> with alt-text. This is often easier to do correctly with actual texts than dummy-text. Even in a dummy-text, you should use real headings, like <h1>Study areas in P35</h1>…<h2>The library</h2>.
