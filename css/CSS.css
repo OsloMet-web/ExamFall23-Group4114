@@ -1,5 +1,8 @@
 
-
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 .grid-container-navbar {
     background-color: #858b13;
@@ -33,7 +36,7 @@ footer {
 }
 
 
-.forside-bilde {
+.bilde {
     background-image: url("../pictures/testebilde.jpeg");
     background-size: cover; /* stretches the image from side to side, top to bottom hentet fra Tengel */
     width: 90vw;
