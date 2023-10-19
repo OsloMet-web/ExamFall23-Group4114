@@ -45,6 +45,7 @@ body {
 
 main {
     margin: 1.2em;
+
 }
 
 /* navbar */
@@ -79,7 +80,7 @@ main {
 }
 
 .navbar-flex-container > div:hover {
-    background-color: rgba(199, 164, 10, 0.5)
+    background-color: rgba(199, 164, 10, 0.3)
 }
 
 .active-tab {
