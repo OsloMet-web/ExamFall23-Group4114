@@ -52,16 +52,16 @@ main {
     height: 50px;
     display: flex;
     align-items: center;
-    background-color: rgb(242, 200, 13);
     border-bottom: 1px solid;
-    border-color: rgb(199, 164, 10);
+    border-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgb(242, 200, 13); */
+    /* border-color: rgb(199, 164, 10); */
 }
 
 .navbar-flex-container > div {
     align-items: center;
     display: flex;
     height: 50px;
-    /* border-radius: 50px; */
 }
 
 .navbar-flex-container > div > a {
@@ -71,7 +71,6 @@ main {
     padding-right: 20px;
     padding-top: 16px;
     padding-bottom: 16px;
-    
 }
 
 .navbar-flex-container > div > picture > a > img {
@@ -79,12 +78,11 @@ main {
 }
 
 .navbar-flex-container > div:hover {
-    background-color: rgb(199, 164, 10)
+    background-color: rgba(199, 164, 10, 0.5)
 }
 
 .active-tab {
-    background-color: rgb(199, 164, 10);
-    /* border-radius: 50px; */
+    background-color: rgba(199, 164, 10, 0.3);
 }
 
 /* 
