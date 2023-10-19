@@ -41,6 +41,9 @@ body {
     height: 60vw;
 }
 
+
+
+
 /* page 3 */
 
 main {
@@ -48,31 +51,41 @@ main {
 
 }
 
+
 /* navbar */
 
-.navbar-flex-container {
-    height: 50px;
+/* fuck flexboxes */
+
+/* whole navbar */
+.navbar-container {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    height: 50px;
     border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* buttons in the navbar excluding burger */
+.navbar-flex-container {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
     /* background-color: rgb(242, 200, 13); */
     /* border-color: rgb(199, 164, 10); */
 }
 
 .navbar-flex-container > div {
-    align-items: center;
     display: flex;
-    height: 50px;
+    align-items: center;
 }
 
 .navbar-flex-container > div > a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: black;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 0 20px;
+    height: 100%;
 }
 
 .navbar-flex-container > div > picture > a > img {
@@ -80,12 +93,61 @@ main {
 }
 
 .navbar-flex-container > div:hover {
-    background-color: rgba(199, 164, 10, 0.3)
+    background-color: rgba(199, 164, 10, 0.3);
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); */
 }
+
+
 
 .active-tab {
     background-color: rgba(199, 164, 10, 0.3);
 }
+
+
+
+
+
+/* burger menu */
+
+#burger-toggle {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+}
+
+.burger-icon {
+    /* pixelmator svg */
+    background-image: url(../pictures/burger.svg);
+    background-size: cover;
+    width: 3em;
+    height: 50px;
+}
+
+.burger-icon:hover {
+    background-color: rgba(199, 164, 10, 0.3);
+}
+
+/* desktop or larger screens */
+@media (min-width: 701px){
+    .burger-icon {
+        display: none
+    }
+}
+
+/* phones or smaller screens */
+@media (max-width: 700px){
+    .navbar-container {
+        width: 100%;
+        height: 50px;
+    }
+
+    .navbar-flex-container > div > a {
+        display: none;
+    }
+}
+
 
 /* 
 primary rgb(199, 164, 10)
