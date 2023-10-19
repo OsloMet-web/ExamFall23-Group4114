@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFEFA
+}
+
+.grid-container-navbar {
+    background-color: #858b13;
+    display: flex;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: minmax(10px 200px) 50px minmax(10px 200px);
+    grid-template-rows: auto;
+}
+
+.text-grid {
+    grid-column: 1 / 2;
+}
+
+.picture-grid {
+    grid-column-start: 3 / 4;
+}
+
+
+.forside-bilde {
+    background-image: url("../pictures/testebilde.jpeg");
+    background-size: cover; /* stretches the image from side to side, top to bottom hentet fra Tengel */
+    width: 90vw;
+    height: 60vw;
+}
+
+
+.bilde {
+    background-image: url("../pictures/testebilde.jpeg");
+    background-size: cover; /* stretches the image from side to side, top to bottom hentet fra Tengel */
+    width: 90vw;
+    height: 60vw;
+}
+
+/* page 3 */
+
+main {
+    margin: 1.2em;
+}
+
+/* navbar */
+
+.navbar-flex-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgb(242, 200, 13); */
+    /* border-color: rgb(199, 164, 10); */
+}
+
+.navbar-flex-container > div {
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+
+.navbar-flex-container > div > a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.navbar-flex-container > div > picture > a > img {
+    height: 50px;
+}
+
+.navbar-flex-container > div:hover {
+    background-color: rgba(199, 164, 10, 0.5)
+}
+
+.active-tab {
+    background-color: rgba(199, 164, 10, 0.3);
+}
+
+/* 
+primary rgb(199, 164, 10)
+second rgb(252, 244, 207)
+accent rgb(242, 200, 13)
+*/
