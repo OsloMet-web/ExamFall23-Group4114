@@ -26,15 +26,7 @@ body {
 
 .forside-bilde {
     background-image: url("../pictures/testebilde.jpeg");
-    background-size: cover; /* stretches the image from side to side, top to bottom hentet fra Tengel */
-    width: 90vw;
-    height: 60vw;
-}
-
-
-.bilde {
-    background-image: url("../pictures/testebilde.jpeg");
-    background-size: cover; /* stretches the image from side to side, top to bottom hentet fra Tengel */
+    background-size: cover; height: 480px; padding-top: 80px; /* stretches the image from side to side, top to bottom hentet fra Tengel */
     width: 90vw;
     height: 60vw;
 }
