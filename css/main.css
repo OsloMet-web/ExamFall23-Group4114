@@ -26,17 +26,32 @@ body {
 }
 
 
-.forside-bilde {
-    background-image: url("../pictures/testebilde.jpeg");
-    background-size: cover; /* stretches the image from side to side, top to bottom hentet fra Tengel */
-    width: 90vw;
-    height: 60vw;
+.bakgrunn {
+    position: relative;
+    padding-top: 10vw;
+    height: 80vw;
+   
+}
+
+.bakgrunn::before { 
+    content: ""; 
+    background-image: url("../pictures/p35.jpeg");
+    background-size: cover;
+    filter: brightness(80%);
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1;
+} 
+
+.bakgrunn > h1, .bakgrunn > p {
+    color: antiquewhite;
 }
 
 
-.bilde {
-    background-image: url("../pictures/testebilde.jpeg");
-    background-size: cover; /* stretches the image from side to side, top to bottom hentet fra Tengel */
+.bilde-skalering {
     width: 90vw;
     height: 60vw;
 }
