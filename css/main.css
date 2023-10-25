@@ -47,13 +47,13 @@ body {
 } 
 
 .bakgrunn > h1, .bakgrunn > p {
-    color: antiquewhite;
+    color: whitesmoke;
 }
 
 
 .bilde-skalering {
-    width: 90vw;
-    height: 60vw;
+    max-width: 4rem;
+    height: auto;
 }
 
 
@@ -168,4 +168,13 @@ footer {
     background-color: gray;
     text-align: center;
 
+}
+
+/* bunntekst på bilder */
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+    color: aliceblue;
 }
