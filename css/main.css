@@ -52,11 +52,9 @@ body {
 
 
 .bilde-skalering {
-    border: 1px solid #ddd;
-    border-radius: 4px;
     padding: 5px;
-    width: 50px;
-    height: 20px;
+    max-width: 150px;
+    height:fit-content auto;
 }
 
 
@@ -181,3 +179,16 @@ footer {
     font-size: 18px;
     color: aliceblue;
 }
+
+/* for bildelink */
+.polaroid {
+    width: 20%;
+    background-color: rgb(219, 217, 217);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    margin-bottom: 25px;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 10px 20px;
+  }
