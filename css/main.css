@@ -195,8 +195,14 @@ footer {
   .flex-container {
     display: flex;
     flex-direction: row;
-    height: 700px;
+    width: 300px;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 50px;
+    padding: 50px;
+    background-color: darkgray;
+    margin: 10px;
+  }
+
+  .text-white {
+    color: white;
   }
