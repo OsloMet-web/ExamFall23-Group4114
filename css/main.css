@@ -169,6 +169,10 @@ footer {
     padding: 4vw;
     background-color: rgb(238 227 188);
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(11, 61, 13);
+    font-weight: 500;
 }
 
 /* bunntekst på bilder */
