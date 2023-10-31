@@ -1,24 +1,92 @@
+<!--Copy a short text (anywhere from 300 to 1000 words) from DATA1100 Technology and Society for Programmers or other subject you have completed. (Or write a new, short text.)
+Add images (if there are none). Remember that in Norwegian copyright law, photographer must always be included. (May be organisation, e.g."Photo: Scanpix", can be in the code, hence invisible on the page itself.)
+Add headings (if there are none).
+Add links (if there are none). This text should have multiple links to external sites with relevant information. We shall not grade you on how relevant the information you link to is, but we expect several links and we expect it to be easy to understand before clicking what information you lead us to.
+If you wish to show off some skills, but found that difficult with the other pages, you can make this (or another) page different from the others, with a distinct visual of functional identity.-->
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../css/main.css">
-    </head>
-    
-    <body>
-        <div class="main-grid-container">
 
-            <div class="grid-item-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo ex saepe in iure nobis cum sit repellat qui quam, ut dolores vel totam rem laborum esse? Sit, facere cumque.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topical</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+
+<body>
+    <!--Topptekst -->
+    <header>
+        <!-- Meny, videre til ny link -->
+        <nav class="navbar-container">
+            <div class="navbar-buttons-container">
+                <a class="nav-logo" href="../index.html">
+                    <img src="../pictures/testlogo.png" alt="Small logo of the website P35" id="logo-png"></a>
+                <a class="nav-button" href="accessibility.html">Accessibility</a>
+                <a class="nav-button" href="topical.html">Topical</a>
+                <a class="nav-button" href="page3.html">Studiesteder</a>
+                <a class="nav-button" href="page5.html">Dummy2</a>
             </div>
-
-            <div class="grid-item-pictures">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum neque voluptatum itaque reprehenderit repellendus quia officiis veritatis at. Sequi velit maxime blanditiis pariatur beatae ipsa repudiandae aperiam voluptas, voluptatem odio.</p>
+            <!--Burgermeny-->
+            <div class="burger-icon">
+                <input type="checkbox" id="burger-toggle">
             </div>
+        </nav>
+    </header>
 
+    <!-- Hoveddel-->
+    <main>
+        <h1>Topical om DDAPE1400-1 23H Programmering</h1>
+        <h2>Introduksjon til programmering</h2>
+        <p>Generelt kan vi si at et program er en serie av instruksjoner. Med instruksjon så menes angivelse av en
+            arbeidsoppgave som skal utføres. For å konkretisere dette kan det være nyttig å bruke analogier med
+            fenomener som vi kjenner fra tidligere, som</p>
+        <ul>
+            <li>en matoppskrift;</li>
+            <li> en note for et musikkstykke;</li>
+            <li>en strikkeoppskrift;</li>
+            <li>en bruksanvisning for hårshampo.</li>
+        </ul>
+        <p>Alle disse er kjennetegnet ved at de beskriver en serie av instruksjoner som må utføres for å oppnå et
+            bestemt resultat. Hovedforskjellen mellom disse og et program er i grunnen bare at i tilfellene ovenfor er
+            det et menneske som skal utføre instruksjonene, mens det i tilfelle program er en datamaskin som skal utføre
+            instruksjonene. Det er ikke noe i veien for at vi kan oppfatte de nevnte ting som programmer. Skal de virke
+            etter hensikten, må de være skrevet i et språk som vi kan forstå. Det kan være vanlig norsk (eller
+            tilsvarende), eventuelt supplert med noen spesialuttrykk. I tilfelle musikkstykke må vi bruke noteskrift.
+            For strikkeoppskrift brukes andre spesialsymboler. Sammenlikningen mellom oppgavene ovenfor og et
+            dataprogram holder ganske bra for dataprogrammer i sin enkleste form, det vil si programmer som er laget for
+            å kunne utføre én bestemt oppgave. Dataprogrammer er imidlertid som regel laget for å kunne kommunisere med
+            brukeren, slik at resultatet av hva programmet gjør avhenger av hva brukeren har foretatt seg med bruk av
+            knapper og andre skjermkomponenter. For et slikt program passer ikke analogien med oppgavene på lista
+            ovenfor like godt.</p>
+        <p>En datamaskin forstår ikke noen av de språk som er nevnt for arbeidsoppgavene på lista ovenfor. Et
+            data-program må derfor skrives i et annet språk — et språk som datamaskinen er konstruert til å forstå. I
+            ytterste konsekvens er datamaskinen bare konstruert til å forstå det som kalles maskinspråk og som er bygget
+            opp av bare to tegn, samt grupperinger av slike. Vi mennesker pleier vanligvis å representere de to tegnene
+            med tallene 0 og 1, og kalle disse for biter eller bits. (I virkeligheten svarer symbolene til at det enten
+            går eller ikke går strøm i en elektrisk leder.) Det er imidlertid svært lite praktisk å skrive programmer
+            uttrykt med bare 0 og 1, selv om det i prinsippet går an. Isteden er det konstruert såkalte
+            programmeringsspråk. Disse består av et lite utvalg av engelske ord, noen spesielle symboler (blant annet
+            forskjellige typer parenteser og skilletegn), og bestemte regler for hvordan uttrykk kan bygges opp. Alt i
+            alt gir det et språk som er mye enklere enn norsk, engelsk og et hvilket som helst annet "vanlig" språk.</p>
+        <p>Vi skal bruke programmeringsspråket java. Det er nå til dags verdens mest brukte programmeringsspråk. Når et
+            program skrevet i java utføres, eller "kjøres" som vi sier, må det først oversettes til maskinspråk, slik at
+            datamaskinen kan forstå det. Til dette brukes blant annet et eget oversetterprogram som kalles kompilator.
+            Vi sier at vi kompilererprogrammet vårt. Da blir det samtidig sjekket om det er skrevet i overensstemmelse
+            med java-språkets regler, dets grammatikk. Ingen feil tolereres! For den aller minste feil blir det skrevet
+            ut en feilmelding på skjermen. Alle feil må rettes opp før vi får utført programmet.</p>
+
+    </main>
+    <!--Bunntekst-->
+    <footer class="footer">
+        <div>
+            <p>Kontakt oss</p>
         </div>
-    </body>
+        <div>
+            <p>Åpningstider</p>
+        </div>
+    </footer>
+
+</body>
+
 </html>
