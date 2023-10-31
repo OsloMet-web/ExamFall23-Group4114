@@ -29,15 +29,15 @@ body {
 .bakgrunn {
     position: relative;
     padding-top: 10vw;
-    height: 80vw;
+    height: 40vw;
    
 }
 
 .bakgrunn::before { 
     content: ""; 
-    background-image: url("../pictures/p35.jpeg");
+    background-image: url("../pictures/p35-kopi.jpg");
     background-size: cover;
-    filter: brightness(60%);
+    filter: brightness(50%);
     position: absolute; 
     top: 0; 
     left: 0; 
