@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/menu.js" defer></script>
 </head>
-
 <body>
     <nav class="navbar-container">
+        <!-- navbar website logo -->
+        <a href="index.html">
+            <img src="pictures/testlogo.png" alt="website logo displaying p35 in big letters">
+        </a>
 
-        <div class="navbar-buttons-container">
-
-            <a class="nav-logo" href="index.html">
-                <img src="pictures/testlogo.png" alt="Small logo of the website P35" id="logo-png">
-            </a>
-            <a class="nav-button" href="html/accessibility.html">Accessibility</a>
-            <a class="nav-button" href="html/topical.html">Topical</a>
-            <a class="nav-button" href="html/page3.html">Studiesteder</a>
-            <a class="nav-button" href="html/page5.html">Dummy2</a>
+        <!-- burger icon / menu icon -->
+        <div class="navbar-burgericon">
+            <img src="pictures/burger.svg" alt="">
         </div>
 
-        <div class="burger-icon">
-            <input type="checkbox" id="burger-toggle">
+        <!-- navbar buttons excluding logo -->
+        <div class="navbar-buttons">
+            <ul>
+                <li><a href="html/accessibility.html">Accessibility</a></li>
+                <li><a href="html/topical.html">Topical</a></li>
+                <li><a class="current-actvie-tab" href="html/studiesteder.html">Studiesteder</a></li>
+                <li><a href="html/page5.html">Dummy 2</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -104,20 +107,7 @@
 
     </div>
 
-    <footer class="footer">
-        <div>
-            <h3>Kontakt oss</h3>
-            <p>Email: noe@email.no</p>
-            <p>Telefon: 12345678</p>
-        </div>
-        <div>
-            <h3>Åpningstider</h3>
-            <p>Man - Fre: 10.00 - 12.00</p>
-            <p>Lør: 18.00 - 22.00</p>
-            <p>Søn: Stengt</p>
-        </div>
-    </footer>
-
+    
 </body>
 
 </html>
