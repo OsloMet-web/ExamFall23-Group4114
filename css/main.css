@@ -73,24 +73,42 @@ body {
     border-radius: 20px;
 }
 
-.p3-flex-square {
-    padding: 0 20px;
-    margin: 10px;
+/* shadow, border, padding and margin for all the individual squares */
+.p3-flex-container-section div {
     border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.p3-flex-image {
-    max-width: 30%;
-    height: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
     margin: 10px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
 }
 
-.p3-flex-image img {
-    width: 100%;
+/* flex 1 to make the square take up the rest of the width */
+.p3-flex-square {
+    flex: 1;
+}
+
+/* image as background of div, using 30% of the viewport in width */
+.p3-flex-image {
+    background-size: cover;
+    background-position: top;
+    position: left;;
+    width: 30vw;
+}
+
+#p3-flex-image-1 {
+    background-image: url(../pictures/1.jpeg);
+}
+
+#p3-flex-image-2 {
+    background-image: url(../pictures/2.jpeg);
+}
+
+#p3-flex-image-3 {
+    background-image: url(../pictures/3.jpeg);
+}
+
+#p3-flex-image-4 {
+    background-image: url(../pictures/4.jpeg);
 }
 
 /* navbar */
@@ -200,15 +218,8 @@ body {
     }
 
     .p3-flex-image {
-        height: 100%;
-        width: 100%;
-        min-width: 100%;
-        margin: 0;
-        padding: 0;
-
-    }
-    .p3-flex-image {
-        padding: 0;
+        height: 300px;
+        width: auto;
     }
 }
 
