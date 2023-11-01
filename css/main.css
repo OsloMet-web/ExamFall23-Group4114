@@ -168,7 +168,7 @@ body {
 }
 
 
-/* navbar on phones or smaller screens */
+/* media queru for phones / smaller screens */
 @media (max-width: 701px){
     .navbar-burgericon {
         display: block;
