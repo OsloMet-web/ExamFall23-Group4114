@@ -15,24 +15,28 @@ If you wish to show off some skills, but found that difficult with the other pag
 
 
 <body>
-    <!--Topptekst -->
-    <header>
-        <!-- Meny, videre til ny link -->
-        <nav class="navbar-container">
-            <div class="navbar-buttons-container">
-                <a class="nav-logo" href="../index.html">
-                    <img src="../pictures/testlogo.png" alt="Small logo of the website P35" id="logo-png"></a>
-                <a class="nav-button" href="accessibility.html">Accessibility</a>
-                <a class="nav-button" href="topical.html">Topical</a>
-                <a class="nav-button" href="page3.html">Studiesteder</a>
-                <a class="nav-button" href="page5.html">Dummy2</a>
-            </div>
-            <!--Burgermeny-->
-            <div class="burger-icon">
-                <input type="checkbox" id="burger-toggle">
-            </div>
-        </nav>
-    </header>
+    <!-- navbar -->
+    <nav class="navbar-container">
+        <!-- website logo -->
+        <a href="../index.html">
+            <img src="../pictures/testlogo.png" alt="website logo displaying p35 in big letters">
+        </a>
+
+        <!-- burger menu icon for mobile -->
+        <div class="navbar-burgericon">
+            <img src="../pictures/burger.svg" alt="">
+        </div>
+
+        <!-- buttons excluding logo -->
+        <div class="navbar-buttons">
+            <ul>
+                <li><a href="../html/accessibility.html">Accessibility</a></li>
+                <li><a href="../html/topical.html">Topical</a></li>
+                <li><a class="current-actvie-tab" href="../html/studiesteder.html">Studiesteder</a></li>
+                <li><a href="../html/page5.html">Dummy 2</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hoveddel-->
     <!-- Tekst hentet fra "Kompendium i Programmering, Java" skrevet av Kjetil Grønning og Eva Hadler Vihovde-->
