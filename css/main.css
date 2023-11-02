@@ -75,16 +75,24 @@ body {
 
 /* shadow, border, padding and margin for all the individual squares */
 .p3-flex-container-section div {
+    min-height: 300px;
+    margin: 10px 10px 20px 10px;
+    padding: 0 20px;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
-    margin: 10px;
-    padding: 0 20px;
 }
 
-/* flex 1 to make the square take up the rest of the width */
+/* flex 1 to make squares take rest of width not taken by image */
 .p3-flex-square {
     flex: 1;
+}
+
+/* borderless square for general information */
+.p3-flex-container-section-borderless {
+    flex: 1;
+    margin: 10px 10px 40px 10px;
+    padding: 0 20px;
 }
 
 /* image as background of div, using 30% of the viewport in width */
@@ -108,7 +116,7 @@ body {
 }
 
 #p3-flex-image-4 {
-    background-image: url(../pictures/4.webp);
+    background-image: url(../pictures/3.webp);
 }
 
 /* navbar */
@@ -193,10 +201,12 @@ body {
         display: none;
     }
 
+    /* list becomes vertical menu */
     .navbar-buttons ul {
         flex-direction: column;
     }
 
+    /* centers the text when in menu mode */
     .navbar-buttons ul li {
         text-align: center;
     }
@@ -219,6 +229,11 @@ body {
     .p3-flex-image {
         height: 300px;
         width: auto;
+    }
+
+    /* auto height on mobile for better screen realestate use */
+    .p3-flex-container-section div {
+        min-height: auto;
     }
 }
 
