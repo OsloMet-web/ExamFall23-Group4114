@@ -20,9 +20,6 @@ time {
     white-space: pre-line;
 }
 
-address {
-    white-space: pre-line;
-}
 
 /* ikke i bruk ? */
 
@@ -365,4 +362,4 @@ address {
   
 .accessFargeSide {
     flex: 25%;
-}
+  }
