@@ -351,3 +351,14 @@ time {
     justify-content: flex-end;
 
 }
+
+.accessFarge {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .accessFargeSide {
+    flex: 25%;
+  }
