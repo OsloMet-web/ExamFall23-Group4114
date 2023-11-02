@@ -35,7 +35,7 @@ body {
 
 .bakgrunn::before { 
     content: ""; 
-    background-image: url("../pictures/p35-kopi.jpg");
+    background-image: url("../pictures/p35-kopi.webp");
     background-size: cover;
     filter: brightness(50%);
     position: absolute; 
@@ -96,19 +96,19 @@ body {
 }
 
 #p3-flex-image-1 {
-    background-image: url(../pictures/1.jpeg);
+    background-image: url(../pictures/1.webp);
 }
 
 #p3-flex-image-2 {
-    background-image: url(../pictures/2.jpeg);
+    background-image: url(../pictures/2.webp);
 }
 
 #p3-flex-image-3 {
-    background-image: url(../pictures/3.jpeg);
+    background-image: url(../pictures/3.webp);
 }
 
 #p3-flex-image-4 {
-    background-image: url(../pictures/4.jpeg);
+    background-image: url(../pictures/4.webp);
 }
 
 /* navbar */
