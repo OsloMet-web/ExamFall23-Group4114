@@ -1,4 +1,5 @@
-/* rename to styles? */
+/* === global === */
+
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -6,10 +7,17 @@ body {
     background-color: #FFFEFA;
 }
 
-.grid-container-navbar {
-    background-color: #858b13;
+footer {
+    padding: 4vw;
+    background-color: rgb(35, 35, 35);
+    text-align: center;
     display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
 }
+
+/* ikke i bruk ? */
 
 .main-grid-container {
     display: grid;
@@ -30,7 +38,6 @@ body {
     position: relative;
     padding-top: 10vw;
     height: 40vw;
-   
 }
 
 .bakgrunn::before { 
@@ -59,7 +66,7 @@ body {
 }
 
 
-/* studiesteder */
+/* === studiesteder.html === */
 
 .p3-flex-container {
     display: flex;
@@ -99,7 +106,7 @@ body {
 .p3-flex-image {
     background-size: cover;
     background-position: center;
-    position: left;;
+    position: left;
 }
 
 #p3-flex-image-1 {
@@ -122,7 +129,7 @@ body {
     min-width: 40vw;
 }
 
-/* navbar */
+/* === navbar === */
 
 .navbar-container {
     display: flex;
@@ -143,7 +150,6 @@ body {
     margin: 15px 30px;
     border-radius: 15px; 
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.07);
-   
 }
 
 .navbar-container img {
@@ -186,7 +192,7 @@ body {
     width: 50px;
 }
 
-/* media query for phones / smaller screens */
+/*  === media query for smaller screens === */
 
 @media (max-width: 700px){
     .navbar-burgericon {
@@ -240,17 +246,6 @@ body {
     }
 }
 
-
-footer {
-    padding: 4vw;
-    background-color: rgb(35, 35, 35);
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-}
-
 /* bunntekst på bilder */
 .bottomleft {
     position: absolute;
@@ -269,13 +264,13 @@ footer {
     transition: transform 0.3s;
   }
   
-  /*til polaroid bilde */
+  /* til polaroid bilde */
   .container {
     text-align: center;
     padding: 20px;
   }
 
-  /*Styler linken inne i container */
+  /* styler linken inne i container */
   .container a {
     color: rgb(30, 61, 61);
     text-decoration: none;
