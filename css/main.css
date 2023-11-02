@@ -95,28 +95,31 @@ body {
     padding: 0 20px;
 }
 
-/* image as background of div, using 30% of the viewport in width */
+/* image as background of div, with adjustable viewport width for each image */
 .p3-flex-image {
     background-size: cover;
     background-position: center;
     position: left;;
-    width: 40vw;
 }
 
 #p3-flex-image-1 {
     background-image: url(../pictures/1.webp);
+    min-width: 40vw;
 }
 
 #p3-flex-image-2 {
     background-image: url(../pictures/2.webp);
+    min-width: 50vw;
 }
 
 #p3-flex-image-3 {
     background-image: url(../pictures/3.webp);
+    min-width: 40vw;
 }
 
 #p3-flex-image-4 {
     background-image: url(../pictures/3.webp);
+    min-width: 40vw;
 }
 
 /* navbar */
