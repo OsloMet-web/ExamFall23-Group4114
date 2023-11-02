@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
-    background-color: #FFFEFA;
+    background-color: #faffff;
 }
 
 footer {
@@ -14,6 +14,10 @@ footer {
     display: flex;
     justify-content: space-between;
     color: rgb(255, 255, 255);
+}
+
+time {
+    white-space: pre-line;
 }
 
 /* ikke i bruk ? */
@@ -191,6 +195,8 @@ footer {
     height: 100%;
     width: 50px;
 }
+
+/* !! IDs at bottom */
 
 /*  === media query for smaller screens === */
 
