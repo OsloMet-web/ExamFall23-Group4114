@@ -46,10 +46,32 @@ Tell us how you checked, and coding choices you made for universal design beyond
     <main>
         <h1>Accessibility Test</h1>
         <h2>Hvordan har vi testet vår nettside?</h2>
-        <p>For å sikre kvaliteten på vårt nettsted, benytter vi oss av et nettsted som verktøy for tilgjengelighetstesting kalt <link: NETTSTED>. Dette verktøyet hjelper oss med å oppdage potensielle problemer og sørge for at nettstedet vårt overholder retningslinjene for tilgjengelighet, spesielt WCAG (Web Content Accessibility Guidelines).</p>
-        <p>Med <NETTSTED> gjennomgår vi nøye nettstedets struktur, innhold og funksjonalitet. Verktøyet identifiserer automatisk feil og gir oss en oversikt over områder som trenger umiddelbar oppmerksomhet. Disse testene er en integrert del av vår utviklingsprosess, og de gjentas jevnlig for å kontinuerlig forbedre tilgjengeligheten på nettstedet.</p>
-        <p>For å vise resultatene av disse testene og vår innsats for å forbedre tilgjengeligheten, har vi inkludert skjermbilder fra både testverktøyet og vår kode. Disse skjermbildene gir en visuell fremstilling av de identifiserte problemene, samt de kodemodifikasjonene som er gjort for å løse dem. Dette bidrar til å sikre at vårt nettsted er så tilgjengelig som mulig for alle brukere.</p>
-        <h2>Selve testen</h2>
+<!--Tekst hentet fra linken til Lighthouse, bare oversatt -->
+        <p>For å sikre kvaliteten på vårt nettsted, benytter vi oss av en utvidelse til nettleseren <a href= «https://www.google.com/chrome/?brand=YTUH&gclid=CjwKCAjwkY2qBhBDEiwAoQXK5fBmfCaNFYyYpeFwHXzuzgH0KB8b9GjFa4RhCobCpYxJY52km_9CyhoCASYQAvD_BwE&gclsrc=aw.ds»>Google Chrome</a> som verktøy for tilgjengelighetstesting kalt <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a>. 
+
+Dette verktøyet hjelper oss med å oppdage potensielle problemer og sørge for at nettstedet vårt forbedre kvaliteten.</p>
+
+<h2>Hvordan fungerer Lighthouse?</h2>
+	
+<p>Du gir Lighthouse en URL til en nøye gjennomgang med et sett forhåndsdefinerte krav. Den kjører en rekke gjennomganger mot siden, og deretter genererer den en rapport om hvor godt siden gjorde det. 
+Dette er hovedkravene: </p>
+	<ul>
+		<li>Performance: Måler ytelse og finner muligheter for å øke hastigheten på sideinnlastingen.</li>
+		<li>Accessiblity: Kan alle brukere få tilgang til innhold og navigere på nettstedet ditt effektivt?</li>
+		<li>Best Practices: Forbedre «kodehelsen» til nettsiden din ved å følge følgende «..» for beste fremgangsmåtene</li>
+		<li>SEO: Hvor godt kan søkemotorer forstå innholdet ditt?</li>
+		<li>PWA: Mål om nettstedet ditt er raskt, pålitelig og installerbart.</li>
+	</ul>
+<p>Derfra kan du bruke de gjennomgangene som indikatorer på hvordan du kan forbedre siden. Hver revisjon har et referansedokument som forklarer hvorfor tilsynet er viktig, samt hvordan det kan fikses.
+Her kan man se hvordan lighthouse reagerte til at bakgrunnsfargen og  tekstenfargen var samme farge</p>
+
+<!--Bilder -->
+
+<h2>Lighthouse egenskaper</h2>
+        <p>Med Lighthouse gjennomgår vi nøye nettstedets struktur, innhold og funksjonalitet. Verktøyet identifiserer automatisk feil og gir oss en oversikt over områder som trenger umiddelbar oppmerksomhet. Disse testene er en integrert del av vår utviklingsprosess, og de gjentas jevnlig for å kontinuerlig forbedre tilgjengeligheten på nettstedet.</p>
+
+<h2>Vår Tilgjengelighetstest</h2>
+        <p>For å vise resultatene av disse testene og vår innsats for å forbedre tilgjengeligheten, har vi inkludert skjermbilder fra både testverktøyet og vår kode. Disse skjermbildene gir en visuell fremstilling om det er noen problemer vi har gått glipp av. Dette bidrar til å sikre at vårt nettsted er så tilgjengelig som mulig for alle brukere.</p>
         <picture>
             <source src="../pictures/access.png" type="image/png">
             <img src="../pictures/access.png" alt="Skjermbilde av testen">
