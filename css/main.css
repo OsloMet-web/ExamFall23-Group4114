@@ -46,8 +46,9 @@ time {
 
 .bakgrunn::before { 
     content: ""; 
-    background-image: url("../pictures/p35-kopi.webp");
+    background-image: url("../pictures/img.webp");
     background-size: cover;
+    background-position: center;
     filter: brightness(50%);
     position: absolute; 
     top: 0; 
@@ -140,24 +141,33 @@ time {
     align-items: center;
     position: sticky;
     height: 50px;
-    top: 0;
+    top: 5px;
     z-index: 1;
+
+    /* ! ville ikke ha kombinert? */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.07);
 
     /* background blur with safari support */
     background-color: rgba( 255, 255, 255, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
+    
 
     /* rounded navbar */
-    top: 5px;
-    margin: 15px 30px;
     border-radius: 15px; 
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.07);
 }
 
 .navbar-container img {
     height: 46px;
+}
+
+#p35-rounded {
+    border-radius: 15px; 
 }
 
 .navbar-buttons ul {
@@ -176,13 +186,14 @@ time {
     padding: 0.95rem;
     color: black;
     text-decoration: none;
+    border-radius: 15px; 
 }
 
 .navbar-container a:hover {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-.current-actvie-tab {
+.current-active-tab {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
