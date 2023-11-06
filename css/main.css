@@ -16,10 +16,9 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-time {
+time, address {
     white-space: pre-line;
 }
-
 
 /* ikke i bruk ? */
 
