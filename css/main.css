@@ -369,13 +369,13 @@ header {
 
 }
 
-.accessFarge {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+.accessFargeRad {
+    width: 20px;
+   height: 40px;
   }
   
-.accessFargeSide {
-    width: 25%;
+.accessFargeKolonne {
+    max-width: 100%;  /* Sørg for at bildet ikke overstiger kolonnens bredde */
+    height: auto;     /* Behold høyde-bredde-forholdet for bildet */
+    display: block;   /* Fjern eventuell ekstra mellomrom under bildet */
   }
