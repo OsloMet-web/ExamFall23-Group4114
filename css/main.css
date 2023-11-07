@@ -370,6 +370,7 @@ header {
 }
 
 /*Bilde til Tilgjengelighetstesten (4 bilder ved siden av hverandre)*/
+/*This shit wont make pictures smaller*/
 .accessRad {
     width: auto;    /* La kolonnene tilpasse seg innholdet */
     display: flex;  /* Bruk flexbox for layout */
