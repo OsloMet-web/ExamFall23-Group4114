@@ -9,21 +9,21 @@
     <script src="../js/menu.js" defer></script>
 </head>
 <body>
-    <!-- navbar -->
     <nav class="navbar-container">
-        <!-- navbar website logo -->
-        <a id="p35-rounded" href="../index.html">
+        <!-- navbar logo -->
+        <picture>
             <img src="../pictures/testlogo.webp" alt="website logo displaying p35 in big letters">
-        </a>
+        </picture>
 
-        <!-- burger menu icon for mobile -->
+        <!-- navbar burger menu icon for mobile -->
         <div id="navbar-burgericon">
             <img src="../pictures/burger.webp" alt="burger icon which opens the website menu">
         </div>
 
-        <!-- navbar buttons excluding logo -->
+        <!-- navbar buttons -->
         <div class="navbar-buttons">
             <ul>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="../html/accessibility.html">Accessibility</a></li>
                 <li><a href="../html/topical.html">Topical</a></li>
                 <li><a class="current-active-tab" href="../html/studiesteder.html">Studiesteder</a></li>
@@ -32,52 +32,80 @@
         </div>
     </nav>
 
-    <main>
-        <!-- endre div til main-->
-        <div class="p3-flex-container">
-            <div class="p3-flex-container-section-title">
-                <h1>Studiesteder i P35</h1>
-                <p>Velkommen til den magiske verdenen av hemmelige studieplasser ved OsloMet! Mens OsloMet er kjent for sine åpne studieområder, er det også noen skjulte steder som føles som om de er tatt rett ut av en eventyrbok.</p>
+    <header>
+        <h1>Studiesteder i P35</h1>
+        <p>Velkommen til den magiske verdenen av hemmelige studieplasser ved OsloMet! Mens OsloMet er kjent for sine åpne studieområder, er det også noen skjulte steder som føles som om de er tatt rett ut av en eventyrbok.</p>
+    </header>
+
+    <main class="main-container">
+        <article class="article-flex-container">
+            <div class="article-flex-text">
+                <h2>Datatorget</h2>
+                <p>På fjerde etasje har vi "Datatorget," som kan høres ut som et dystopisk samfunn i en sci-fi-roman. Her, midt blant det surrende lyset av dataskjermer og det pulserende hjertet av teknologi, finner teknologistudentene sitt andre hjem. Datamaskinene i Datatorget blir ikke bare maskiner her; de blir våre trofaste medstudenter, alltid klare til å hjelpe og veilede oss gjennom de komplekse kodespråkene og de mystiske algoritmene som vi studerer. e drømmer til fungerende programvare, kretsløp og algoritmer. En scene der ideer blir født, og innovasjon trives. Velkommen til Datatorget, hvor fremtiden blir kodet og datamaskiner blir dine beste læremestere.</p>
             </div>
+
+            <figure>
+                <!-- missing alt text on all images -->
+                <img src="../pictures/1.webp" alt="">
+                <figcaption>
+                    Datatorget
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="article-flex-container">
+            <figure>
+                <img src="../pictures/2.webp" alt="">
+                <figcaption>
+                    Stillerom
+                </figcaption>
+            </figure>
+            <div class="article-flex-text">
+                <h2>Stillhet?</h2>
+                <p>Hvis du er en fan av stillhet og en frodig atmosfære, kan du ta turen til "Stillesalen" på første etasje. Det er ikke bare et studiested; det er et tempel for ro og fordybelse. Her hvisker bøkene hemmelighetene til universet til deg, og selv støvet tørker tårene dine når du står fast i pensum.</p>
+            </div>
+
             
-            <!-- endre div til section -->
-            <div class="p3-flex-container-section">
-                <div class="p3-flex-square">
-                    <h2>Datatorget</h2>
-                    <p>På fjerde etasje har vi "Datatorget," som kan høres ut som et dystopisk samfunn i en sci-fi-roman. Her, midt blant det surrende lyset av dataskjermer og det pulserende hjertet av teknologi, finner teknologistudentene sitt andre hjem. Datamaskinene i Datatorget blir ikke bare maskiner her; de blir våre trofaste medstudenter, alltid klare til å hjelpe og veilede oss gjennom de komplekse kodespråkene og de mystiske algoritmene som vi studerer. Dette stedet er som et digitalt mekka, hvor informasjon strømmer som en elv av bits og bytes. Du kan se studentene sitte komfortabelt i sine ergonomiske stoler, fordypt i kodingens kunst eller dypdykk i de nyeste teknologiske nyhetene. Datatorget er stedet for dem som elsker å dykke inn i den digitale verden og forvandle sine drømmer til fungerende programvare, kretsløp og algoritmer. En scene der ideer blir født, og innovasjon trives. Velkommen til Datatorget, hvor fremtiden blir kodet og datamaskiner blir dine beste læremestere.</p>
-                </div>
-                <!-- mangler kilde på bilder -->
-                <!-- endre div til picture -->
-                <div class="p3-flex-image" id="p3-flex-image-1"></div>
+        </article>
+
+        <article class="article-flex-container">
+            <div class="article-flex-text">
+                <h2>Biblioteket</h2>
+                <p>For eventyrlystne sjeler, er tredje etasje universitetets skattekiste. Utforsk bibliotekets ulike avdelinger, og du vil finne skjulte studiehuler som kan føles som du går gjennom en magisk portal til en annen verden. Kanskje, akkurat der, vil du finne svaret på mysteriet om hvor sokkene dine forsvinner.</p>
             </div>
 
-            <div class="p3-flex-container-section">
-                <!-- endre div til article -->
-                <div class="p3-flex-square">
-                    <h2>Stillhet?</h2>
-                    <p>Hvis du er en fan av stillhet og en frodig atmosfære, kan du ta turen til "Stillesalen" på første etasje. Det er ikke bare et studiested; det er et tempel for ro og fordybelse. Her hvisker bøkene hemmelighetene til universet til deg, og selv støvet tørker tårene dine når du står fast i pensum.</p>
-                </div>
-                <!-- endre div til picture -->
-                <div class="p3-flex-image" id="p3-flex-image-2"></div>
+            <figure>
+                <img src="../pictures/3.webp" alt="">
+                <figcaption>
+                    Bibilioteket
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="article-flex-container">
+            <div class="article-flex-text">
+                <h2>Toalettet</h2>
+                <p>Og nå til det mest uventede stedet: toalettet i underetasjen. Dette er det eneste toalettet i universitetshistorien som virker som en tidsmaskin. Du går inn for en kort pause og kommer ut som en ny og opplyst person. Vi er ikke helt sikre på hva som skjer der inne, men vi har en mistanke om at det er et portal til en annen dimensjon.</p>
             </div>
 
-            <div class="p3-flex-container-section">
-                <div class="p3-flex-square">
-                    <h2>Biblioteket</h2>
-                    <p>For eventyrlystne sjeler, er tredje etasje universitetets skattekiste. Utforsk bibliotekets ulike avdelinger, og du vil finne skjulte studiehuler som kan føles som du går gjennom en magisk portal til en annen verden. Kanskje, akkurat der, vil du finne svaret på mysteriet om hvor sokkene dine forsvinner.</p>
-                </div>
-                <div class="p3-flex-square">
-                    <h2>Toalettet</h2>
-                    <p>Og nå til det mest uventede stedet: toalettet i underetasjen. Dette er det eneste toalettet i universitetshistorien som virker som en tidsmaskin. Du går inn for en kort pause og kommer ut som en ny og opplyst person. Vi er ikke helt sikre på hva som skjer der inne, men vi har en mistanke om at det er et portal til en annen dimensjon.</p>
-                </div>
-                <!-- endre div til summary -->
-                <!-- summary -->
-                <div class="p3-flex-square">
-                    <h2>That's all folks!</h2>
-                    <p>Så, uansett om du er en tech-wizard, en bokorm, en eventyrer, eller en toalett-filosof, OsloMet har skjulte studieplasser som vil gi deg en opplevelse utenom det vanlige. Lykke til med studiene, og husk at eventyret alltid er rundt hjørnet!</p>
-                </div>
+            <figure>
+                <img src="../pictures/3.webp" alt="">
+                <figcaption>
+                    Toalettet
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="article-flex-container">
+            <div class="article-flex-text">
+                <h2>test</h2>
+                <p>hello there</p>
             </div>
-        </div>
+            <div class="article-flex-text">
+                <h2>test 2</h2>
+                <p>yes hello</p>
+            </div>
+        </article>
     </main>
 
     <footer>
