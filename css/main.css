@@ -369,13 +369,14 @@ header {
 
 }
 
-.accessFargeRad {
-    width: 20px;
-   height: 40px;
+.accessRad {
+    width: auto;    /* La kolonnene tilpasse seg innholdet */
+    display: flex;  /* Bruk flexbox for layout */
   }
   
-.accessFargeKolonne {
-    max-width: 100%;  /* Sørg for at bildet ikke overstiger kolonnens bredde */
-    height: auto;     /* Behold høyde-bredde-forholdet for bildet */
-    display: block;   /* Fjern eventuell ekstra mellomrom under bildet */
+.accessKolonne {
+    flex: 1;        /* La kolonnene ta like mye plass */
   }
+.accessBilde {
+    max-width: 25%;
+}
