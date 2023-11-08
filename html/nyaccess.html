@@ -91,18 +91,52 @@ Tell us how you checked, and coding choices you made for universal design beyond
             tilgjengeligheten på nettstedet.</p>
 
         <h2>Vår Tilgjengelighetstest</h2>
-        <p>For å vise resultatene av disse testene og vår innsats for å forbedre tilgjengeligheten, har vi inkludert
-            skjermbilder fra tilgjengelighetstesten vår. Disse skjermbildene gir en visuell fremstilling om det er noen
-            problemer vi har gått glipp av. Dette bidrar til å sikre at vårt nettsted er så tilgjengelig som mulig for
-            alle brukere.</p>
+        <p>For å vise resultatene av disse testene og vår innsats for å forbedre tilgjengeligheten, har vi inkludert skjermbilder fra tilgjengelighetstesten vår. Disse skjermbildene gir en visuell fremstilling om det er noen problemer vi har gått glipp av. Dette bidrar til å sikre at vårt nettsted er så tilgjengelig som mulig for alle brukere.</p>
 
         <!--Bildeoppsett inspirert av fra https://devpractical.com/4-columns-layout-flexbox-css/ -->
-        <picture class="fling-minislide">
-            <img src="../pictures/accessFarger1.png">
-            <img src="../pictures/accessFarger2.png">
-            <img src="../pictures/accessFarger3.png">
-            <img src="../pictures/accessFarger4.png">
-        </picture>
+        <div class="container">
+			<div class="c_slider"></div>
+			<div class="slider">
+				<figure>
+					<img src="../pictures/accessFarger1.png" alt="Bilde 1 fra tilgjengelighetstesten" />
+					<figcaption>Bilde1</figcaption>
+				</figure><!--
+				--><figure>
+					<img src="../pictures/accessFarger2.png" alt="Bilde 2 fra tilgjengelighetstesten" />
+					<figcaption>Bilde2</figcaption>
+				</figure><!--
+				--><figure>
+					<img src="../pictures/accessFarger3.png" alt="Bilde 3 fra tilgjengelighetstesten" />
+					<figcaption><em>(do)</em> time</figcaption>
+				</figure><!--
+				--><figure>
+					<img src="../pictures/accessFarger4.png" alt="Bilde 4 fra tilgjengelighetstesten" />
+					<figcaption>Waking Life</figcaption>
+				</figure>
+			</div>
+		</div>
+		
+		<span id="timeline"></span>
+		
+		<ul class="dots_commands"><!--
+			--><li><a title="Show slide 1" href="#sl_i1">Slide 1</a></li><!--
+			--><li><a title="Show slide 2" href="#sl_i2">Slide 2</a></li><!--
+			--><li><a title="Show slide 3" href="#sl_i3">Slide 3</a></li><!--
+			--><li><a title="Show slide 4" href="#sl_i4">Slide 4</a></li>
+		</ul>
+		
+	</section>
+	
+	<section id="main" role="main">
+		<h2 class="sread">Download and share</h2>
+	
+		<p class="download">
+			<a href="http://creativejuiz.fr/trytotry/dl/download.php?c=juizy-slideshow&amp;v=1.0.0"><span class="arrow">&#8681;</span> Download <span class="file">.zip file of 14 ko</span></a>
+		</p>
+		
+		<p class="center">
+			<img src="img/tested-on.png" alt="Tested on : Firefox 8+, Internet Explorer 9+, Chrome 16+, Safari 5+, Opera 11+" width="368" height="88" />
+		</p>
     </main>
     <!--Bunntekst-->
     <footer>
