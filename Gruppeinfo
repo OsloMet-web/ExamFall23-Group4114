@@ -1,3 +1,45 @@
+
+!! INSPSIRASJON:
+https://natee.no/62/topical.html
+
+Gruppeoppgaver
+    Herman  
+    - grid på datatorget siden (som er annderledes)
+    - lage datatorget
+    - lag egen seksjon i CSS
+
+    Victor
+    - skalering på home page
+    - fikse bildene i linkene
+    - kontrasten
+    - hjelpe stakkars elisabeth med sidemeny
+
+    Stian
+    - logo i footer
+    - navbar over bilde
+    - fikse navbar
+    - oversette navbaren
+
+    Elisabeth
+    - accessability
+    - teste
+    - skrive om semantic elements innnenfor SEO
+    - skalering
+
+    ALLE
+    - På slutten sjekke over grading sheet og finne nye oppgaver
+    - Og gjekke at alt funker på chrome, safari og firefox
+    - Kommentarer i kode
+    - Helt til slutt access testen og bytte ut bilder
+
+    
+
+
+
+
+
+
+
 • index.html should have a general introduction with at least one relevant image
 • One page must be "Accessibility" — see below
 • One page must be "Topical" — see below
@@ -10,49 +52,6 @@
 • Any CSS selector (in the CSS, not when used in HTML) deserves a comment, at least a descriptor
 • Any code that is used in scaling or responsive to screen-size deserves a comment
 • The main purpose for the comments should be to help a future developer take over your project and develop it further; for me, it helps weed out the most obvious copied-code-without-understanding
-
-
-
-Gruppeoppgaver
-    Herman
-    - Grid
-    - Funker til telefon, ipad og nettlesers
-
-    Victor
-    - Footer
-    - Index css
-    - css
-
-    -gi ting navn som gir mening i mer enn bare mitt hode
-    -Skalering skalering skalering
-    -få ting til å faktisk se pent ut
-    -mindre bloat kode
-
-    Stian
-    - Navbar 
-    - Burger meny
-    - Dummy tekst
-    - Bilder av studiesteder
-    
-    Elisabeth
-    - Prøve å skrive tekst til access og Topical
-    - topical siden
-    -Bilde av p35, Kantina, Datatorget
-
-    ALLE
-    - På slutten sjekke over grading sheet og finne nye oppgaver
-    - Og gjekke at alt funker på chrome, safari og firefox
-
-    NYE OPPGAVER 8.NOV:
-    - Bilder
-    - css
-    - kommentar i kode
-    - rydde i kode
-    - slideshow til access
-    - helt til slutt access testen og bytte ut bilder
-
-    
-
 
 Kommentarer i koden
     Ethvert semantisk element fortjener en superkort kommentar om hva det er
