@@ -13,7 +13,16 @@ footer {
     display: flex;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    
+}
+
+a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+   }
+
+a:hover {
+    color: lightgreen;
+
 }
 
 time, address {
