@@ -394,3 +394,7 @@ header {
     max-width: 100%;           /* La bildet skalere innenfor div-boksen */
     height: auto;              /* Behold høyde-bredde-forholdet for bildet */
 }
+
+.eksempelBilde {
+    max-width: 99%;
+}
