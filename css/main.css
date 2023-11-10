@@ -1,5 +1,7 @@
-/* === global === */
-
+/* === Global === */
+img {
+    max-width: 99%;
+}
 :root {
     --maincolor: rgba(187, 203, 207, 0.7);
 }
@@ -90,7 +92,7 @@ time, address {
 }
 
 
-/* === navbar === */
+/* === Navigasjonsbar === */
 
 .navbar-container {
     display: flex;
@@ -389,18 +391,13 @@ header {
 
 }
 
-/*Bilde til Tilgjengelighetstesten (4 bilder ved siden av hverandre)*/
-/*This shit wont make pictures smaller*/
+/*Bilde til Tilgjengelighetstesten (2 bilder ved siden av hverandre 2 ganger)*/
 .access-rad {
-    width: auto;    /* La kolonnene tilpasse seg innholdet */
-    display: flex;  /* Bruk flexbox for layout */
+    width: auto; 
+    display: flex; 
   }
 
 .access-bilde {
-    max-width: 100%;           /* La bildet skalere innenfor div-boksen */
-    height: auto;              /* Behold høyde-bredde-forholdet for bildet */
-}
-
-.eksempel-bilde {
-    max-width: 99%;
+    max-width: 100%;
+    height: auto;
 }
