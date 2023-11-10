@@ -383,13 +383,6 @@ header {
     display: flex;  /* Bruk flexbox for layout */
   }
   
-.access-kolonne {
-    display: flex;             /* Bruk flexbox for layout */
-    justify-content: center;   /* Senter innhold horisontalt */
-    align-items: center;       /* Senter innhold vertikalt */
-    width: 100%;               /* Få kolonnen til å fylle sin overordnede container */
-
-  }
 .access-bilde {
     max-width: 100%;           /* La bildet skalere innenfor div-boksen */
     height: auto;              /* Behold høyde-bredde-forholdet for bildet */
