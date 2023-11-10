@@ -15,11 +15,15 @@ footer {
     background-color: rgb(20, 52, 64);
     display: flex;
     justify-content: space-between;
-    color: rgb(255, 255, 255);
+    color: rgb(232 232 232);
 }
 
 footer section img {
-    width: 150px;
+    width: 130px;
+}
+
+footer section {
+    font-weight: 300;
 }
 
 a, a:visited, a:active {
