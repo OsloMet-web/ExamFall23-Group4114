@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">    <!-- !! description and title needed -->
+    <meta name="description" content=""> <!-- !! description and title needed -->
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/menu.js" defer></script>
 </head>
-<body>
-    <nav class="navbar-container">
-        <!-- navbar logo -->
-        <picture>
-            <img src="../pictures/testlogo.webp" alt="website logo displaying p35 in big letters">
-        </picture>
 
-        <!-- navbar burger menu icon for mobile -->
+<body>
+    <!--Navigasjonsbar-->
+    <nav class="navbar-container">
+        <!--Navbar nettside logo-->
+         <a id="p35-rounded" href="../index.html">
+             <!--Bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo"-->
+             <img src="../pictures/eagle_new.png" alt="nettstedets logo av en sort ørn med teksten tech-topia">
+         </a>
+
+        <!--Burgermeny ikon for mobil-->
         <div id="navbar-burgericon">
             <img src="../pictures/burger.webp" alt="burger icon which opens the website menu">
         </div>
 
-        <!-- navbar buttons -->
+        <!--Navbar knapper-->
         <div class="navbar-buttons">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../html/accessibility.html">Accessibility</a></li>
-                <li><a href="../html/topical.html">Topical</a></li>
-                <li><a class="current-active-tab" href="../html/studiesteder.html">Studiesteder</a></li>
-                <li><a href="../html/page5.html">Datatorget?</a></li>
+                <li><a href="../html/accessibility.html">Tilgjengelighet</a></li>
+                <li><a href="../html/topical.html">Programmering</a></li>
+                <li><a href="../html/studiesteder.html">Studiesteder</a></li>
+                <li><a class="current-active-tab" href="../html/page5.html">Studieavbrekk</a></li>
             </ul>
         </div>
     </nav>
 
-    
+    <!--Topptekst-->
+    <header>
+        <h1>Hvor på Techno-Party-Palace kan man ta en 5 minutters?</h1>
+        <p> Denne siden skal fortelle svaret til spørsmålet i overskriften</p>
+    </header>
 
+    <!--Hoveddel-->
+    <!--Husk å fylle alternativ teks ttil bilder-->
+    <main>
+        <article class="article-flex-container">
+            <div class="article-flex-text">
+                <h2>Spille mini-golf på do</h2>
+                <p>Tekst</p>
+            </div>
+            <figure>
+                <img src="../pictures/p35-kopi.webp" alt="">
+                <figcaption>
+                    bilde
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="article-flex-container">
+            <div class="article-flex-text">
+                <h2>Båtrace gjennom resepsjonen </h2>
+                <p>Tekst</p>
+            </div>
+            <div class="article-flex-text">
+                <h2>Leke barnehage med kantinemedarbeiderene</h2>
+                <p>Tekst</p>
+            </div> 
+        </article>
+
+        <article class="article-flex-container">
+            <div class="article-flex-text">
+                <h2>Synge karaoke med rengjøringspersonalet</h2>
+                <p>tekst</p>
+            </div>
+            <figure>
+                <img src="../pictures/p35-kopi.webp" alt="">
+                <figcaption>
+                    bilde
+                </figcaption>
+            </figure>
+        </article>
+        
+            <article class="article-flex-container">
+                <div class="article-flex-text">
+                    <h2>Stranddag i biblioteket</h2>
+                    <p>Tekst</p>
+                </div>
+                <div class="article-flex-text">
+                    <h2>Stolhopp konkurranse med kollokvien</h2>
+                    <p>Arranger en uoffisiell konkurranse der studenter prøver å hoppe fra stol til stol uten å berøre gulvet i Gerd Hagens auditorium </p>
+                </div>
+        </article>
+    </main>
+
+    <!--Bunntekst-->
     <footer>
         <section>
             <h3>Kontakt oss</h3>
-            <address>Email: noe@email.no
-            Telefon: 12345678
+            <address>Email: <a href="mailto:noe@email.no">noe@email.no</a>
+                Telefon: <a href="tel:12345678">12345678</a>
             </address>
+        </section>
+        <section>
+            <img src="../pictures/eagle_black.png" alt="website logo displaying p35 in big letters">
+            </picture>
         </section>
         <section>
             <h3>Åpningstider</h3>
             <time>Man - Fre: 10.00 - 12.00
-            Lør: 18.00 - 22.00
-            Søn: Stengt
+                Lør: 18.00 - 22.00
+                Søn: Stengt
             </time>
         </section>
     </footer>
 </body>
+
 </html>

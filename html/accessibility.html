@@ -1,10 +1,3 @@
-<!--Accessibility-page
-Short presentation of accessibility for your site. 
-Test your site with an automated test. 
-Write a very short text (about 400-500 words) about how you tested the code for accessibility using this automated test. 
-Tell us how you checked, and coding choices you made for universal design beyond what an automated test could tell you. 
-
- You are recommended to use screenshots from the testing site and of your code – lack of images may affect your score.-->
 <!DOCTYPE html>
 <html lang="no">
 
@@ -17,34 +10,35 @@ Tell us how you checked, and coding choices you made for universal design beyond
     <script src="../js/menu.js" defer></script>
 </head>
 
-
 <body>
+    <!--Navigasjonsbar-->
+    <nav class="navbar-container">
+        <!--Navbar nettside logo-->
+         <a id="p35-rounded" href="../index.html">
+             <!--Bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo"-->
+             <img src="../pictures/eagle_new.png" alt="nettstedets logo av en sort ørn med teksten tech-topia">
+         </a>
+
+        <!--Burgermeny ikon for mobil-->
+        <div id="navbar-burgericon">
+            <img src="../pictures/burger.webp" alt="burger icon which opens the website menu">
+        </div>
+
+        <!--Navbar Buttons-->
+        <div class="navbar-buttons">
+            <ul>
+                <li><a class="current-active-tab" href="../html/accessibility.html">Tilgjengelighet</a></li>
+                <li><a href="../html/topical.html">Programmering</a></li>
+                <li><a href="../html/studiesteder.html">Studiesteder</a></li>
+                <li><a href="../html/page5.html">Studieavbrekk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Topptekst-->
     <header>
-        <!-- navbar -->
-        <nav class="navbar-container">
-            <!-- website logo -->
-            <a id="p35-rounded" href="../index.html">
-                <img src="../pictures/testlogo.webp" alt="website logo displaying p35 in big letters">
-            </a>
-
-            <!-- burger menu icon for mobile -->
-            <div id="navbar-burgericon">
-                <img src="../pictures/burger.webp" alt="burger icon which opens the website menu">
-            </div>
-
-            <!-- navbar buttons excluding logo -->
-            <div class="navbar-buttons">
-                <ul>
-                    <li><a class="current-active-tab" href="../html/accessibility.html">Accessibility</a></li>
-                    <li><a href="../html/topical.html">Topical</a></li>
-                    <li><a href="../html/studiesteder.html">Studiesteder</a></li>
-                    <li><a href="../html/page5.html">Dummy 2</a></li>
-                </ul>
-            </div>
-        </nav>
-
         <h1>Tilgjengelighetstest</h1>
-        <!--En del av teksten er hentet fra linken til Lighthouse, bare oversatt -->
+        <!--En del av teksten er hentet fra linken til Lighthouse, bare oversatt-->
         <p>For å sikre kvaliteten på vårt nettsted, benytter vi oss av en utvidelse til nettleseren <a
                 href=«https://www.google.com/chrome/brand=YTUH&gclid=CjwKCAjwkY2qBhBDEiwAoQXK5fBmfCaNFYyYpeFwHXzuzgH0KB8b9GjFa4RhCobCpYxJY52km_9CyhoCASYQAvD_BwE&gclsrc=aw.ds»>Google
                 Chrome</a> som verktøy for tilgjengelighetstesting kalt <a
@@ -56,14 +50,14 @@ Tell us how you checked, and coding choices you made for universal design beyond
         </p>
     </header>
 
-    <!-- Hoveddelen-->
+    <!--Hoveddelen-->
     <main class="main-container">
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>Hvordan fungerer Lighthouse</h2>
                 <p>Du gir Lighthouse en URL til en nøye gjennomgang med et sett forhåndsdefinerte krav. Den kjører en
                     rekke gjennomganger mot siden, og deretter genererer den en rapport om hvor godt siden gjorde det.
-                    Dette er hovedkravene: </p>
+                    Dette er vurderingskriteriene: </p>
                 <ul>
                     <li>Performance: Måler ytelse og finner muligheter for å øke hastigheten på sideinnlastingen.</li>
                     <li>Accessiblity: Kan alle brukere få tilgang til innhold og navigere på nettstedet ditt effektivt?
@@ -77,26 +71,33 @@ Tell us how you checked, and coding choices you made for universal design beyond
                     har et referansedokument som forklarer hvorfor tilsynet er viktig, samt hvordan det kan fikses. For
                     eksempel så vil du få melding hos lighthouse hvis bakgrunnsfargen og tekstenfargen var samme farge.
                 </p>
+                <p>For å vise resultatene av disse testene og vår innsats for å forbedre tilgjengeligheten, har vi
+                    inkludert skjermbilder fra ulike tilgjengelighetstester med spesifikke kriterier gjennom utviklingen
+                    av nettsiden . Disse skjermbildene gir en visuell fremstilling om det er noen problemer vi har gått
+                    glipp av. Ved siden av vil det bli skrevet litt mer utdypet til eksemplene, før helt til slutt vil
+                    det være vår siste tilgjengelighetstest.
+                </p>
             </div>
         </article>
-        <article>
+        <article class="article-flex-container">
             <figure>
-                <img src="../pictures/access1.jpeg" alt="">
+                <img src="../pictures/access1.jpeg" alt="Skjermbilde av nettleser sammen med Lighthouse der du ser Lightouse i bruk.">
                 <figcaption>
-                    Eksempel bilde av bruk
+                    Eksempel bilde av bruk av Lighthouse
                 </figcaption>
             </figure>
         </article>
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>Performance</h2>
-                <p>tekst</p>
+                <p>Tilgjengelighetstesten er en kritisk del av å opprettholde et brukervennlig nettsted. Denne testen sikrer at alle brukere, inkludert de med funksjonshemninger, kan få tilgang til og navigere gjennom nettstedet ditt på en effektiv måte. Faktorer som lesbarhet av tekst, bruk av alternative tekster for bilder, og tastaturnavigasjon blir tatt i betraktning for å sikre at nettstedet ditt er tilgjengelig for alle. </p>
+                <p>På en tilgjengelighetstest på index.html så fikk vi 98 av 100 poeng i Performance. Første feilen ser vi at det er noe galt med bilde elementene våres. Bildene som er i bruk for øyeblikket er midlertidige bare for å få til det vi ønsket i koden. For å unngå copyright lover, så har vi valgt å ta de aller fleste bilder selv.</p>
+                <p>Den andre feilen handler om at nettleseren skal la dem lagre en kopi av visse nettsider når du navigerer frem og tilbake. Dette gjør det mulig for deg å raskt gå tilbake til forrige side uten å laste den på nytt. Det er ikke noe vi direkte kan fikse med CSS og HTML, annet enn å sjekke at alt er optimalisert.</p>
             </div>
-
             <figure>
-                <img src="../pictures/3.webp" alt="">
+                <img src="../pictures/performance.png" alt="skjermbilde av performance-feilmelding fra lighthouse">
                 <figcaption>
-                    Skjermbilde av Performance
+                    Skjermbilde med Performance-eksempel fra nettsiden
                 </figcaption>
             </figure>
         </article>
@@ -104,27 +105,29 @@ Tell us how you checked, and coding choices you made for universal design beyond
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>Accessibility</h2>
-                <p>tekst</p>
+                <p>Tilgjengelighet er et sentralt aspekt ved ethvert nettsted. Det er viktig å stille spørsmålet: Kan alle brukere få tilgang til innholdet og navigere på nettstedet ditt effektivt? Ved å sikre at svaret er ja, kan du forbedre brukeropplevelsen betydelig. Tilgjengelighet handler ikke bare om å gjøre nettstedet ditt tilgjengelig, men også om å sørge for at alle funksjonene er enkle å bruke og forstå. Dette inkluderer alt fra tekststørrelse og fargekontrast til navigasjonsstruktur og formdesign.</p>
+                <p>På en tilgjengelighetstest på index.html så fikk vi 93 av 100 poeng i Accessibility. I dette eksempelet så mangler teksten som skal vises for brukeren som en klikkbar lenke.</p>
             </div>
 
             <figure>
-                <img src="../pictures/3.webp" alt="">
+                <img src="../pictures/accessibility.png" alt="skjermbilde av accessibility-feilmelding fra lighthouse">
                 <figcaption>
-                    Skjermbilde av Accessibility
+                    Skjermbilde med Accessibility-eksempel fra nettsiden
                 </figcaption>
             </figure>
         </article>
 
         <article class="article-flex-container">
             <div class="article-flex-text">
-                <h2>Best practicses</h2>
-                <p>tekst</p>
+                <h2>Best practices</h2>
+                <p>Å forbedre "kodehelsen" til nettstedet ditt er en viktig del av nettstedsvedlikehold. Ved å følge anerkjente beste praksis, kan du sikre at nettstedet ditt fungerer optimalt og gir en god brukeropplevelse. Dette inkluderer praksis som å sikre at koden er ren og effektiv, at nettstedet lastes raskt, og at det er fri for feil som kan forårsake problemer for brukere eller søkemotorer.</p>
+                <p>Vi holder oss på index.html på tilgjengelighetstesten, og her fikk vi 95 av 100 poeng i Best Practices. Mens testen ble tatt, har vi drevet å tullet rundt med logo til nettsiden Og det er nok årsaken. Så dette må vi titte nøyere på og sjekk om det er riktig navn i koden til riktig bilde. </p>                
             </div>
 
             <figure>
-                <img src="../pictures/3.webp" alt="">
+                <img src="../pictures/bestprac.png" alt="skjermbilde av best-practices-feilmelding fra lighthouse">
                 <figcaption>
-                    Skjermbilde av Best Practicses
+                    Skjermbilde med "Best practices"-eksempel fra nettsiden
                 </figcaption>
             </figure>
         </article>
@@ -132,76 +135,65 @@ Tell us how you checked, and coding choices you made for universal design beyond
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>SEO</h2>
-                <p>tekst</p>
+                <p>Søkemotoroptimaliseringstesten er et viktig verktøy for å sikre at innholdet ditt er synlig og lett å finne for brukere. Denne testen vurderer hvor godt søkemotorer kan forstå og indeksere innholdet ditt, og tar hensyn til bruk av riktige HTML-elementer som FOOTER, HEADER, MAIN, TIME, ADRESS, FIGURE, FIGCAPTION, HEAD, BODY. Ved å optimalisere nettstedet ditt for søkemotorer, kan du øke trafikken til nettstedet og forbedre synligheten din på nettet.</p>
+                <p>Helt til slutt i denne rekken med eksempler, avslutter vi med denne siden, nemlig accessibility.html som fikk 90 av 100 poeng. Mens denne teksten ble skrevet har vii glemt å legge in alternativ tekst på et bilde. Dette er en quick fix som skjer samtidig som denne teksten blir syncet. (;</p>                
             </div>
 
             <figure>
-                <img src="../pictures/3.webp" alt="">
+                <img src="../pictures/seo.png" alt="skjermbilde av SEO-feilmelding fra lighthouse">
                 <figcaption>
-                    Skjermbilde av SEO
+                    Skjermbilde med SEO-eksempel fra nettsiden
                 </figcaption>
             </figure>
         </article>
 
         <article class="article-flex-container">
             <div class="article-flex-text">
-                <h2>PWA</h2>
-                <p>tekst</p>
+                <h2>Honorable Mention: PWA</h2>
+                <p>Vi tester ikke PWA fordi vi lager ikke "Progressive Web Apper" fordi det er ikke en del av pensum/oppgaven.</p>
             </div>
-
-            <figure>
-                <img src="../pictures/3.webp" alt="">
-                <figcaption>
-                    Skjermbilde av PWA
-                </figcaption>
-            </figure>
+        </article>
+        <article class="article-flex-container">
+            <div class="article-flex-text">
+                <h2>VÅR SISTE TILGJENGELIGHETSTEST?</h2>
+                <p>Så, hvordan ser vår endelige tilgjengelighetstest ut? Jo, det er bare fortsette å scrolle så ser du den hvertøyeblikk. (:</p>
+                <p>Vi gir oss nemlig ikke før vi får top score og ingen nødvendige tilbakemeldinger gjenstår. </p>
+            </div>
         </article>
 
         <article class="article-flex-container">
-            <div class="article-flex-text">
-                <h2>VÅR TILGJENGELIGHETSTEST?</h2>
-                <p>Så, hvordan ser vår tilgjengelighetstest ut? Jo, det er bare fortsette å scrolle så ser du den hvert
-                    øyeblikk. (:</p>
-            </div>
+        <!--Bildeoppsett inspirert av fra https://devpractical.com/4-columns-layout-flexbox-css/-->
+        <div class="access-rad">
+            <picture>
+                <img src="../pictures/accessFarger1.png" alt="Skjermbilde av farger side 1 av 4">
+            </picture>
+            <picture>
+                <img src="../pictures/accessFarger2.png" alt="Skjermbilde av farger side 2 av 4">
+            </picture>
+        </div>
         </article>
-
-        <!--Bildeoppsett inspirert av fra https://devpractical.com/4-columns-layout-flexbox-css/ -->
-        <div class="accessRad">
-            <div class="accessKolonne">
-                <picture>
-                    <source src="../pictures/accessFarger1.png" type="image/png">
-                    <img src="../pictures/accessFarger1.png" alt="Skjermbilde av farger side 1 av 4">
-                </picture>
-            </div>
-            <div class="accessFargeKolonne">
-                <picture class="accessBilde">
-                    <source src="../pictures/accessFarger2.png" type="image/png">
-                    <img src="../pictures/accessFarger2.png" alt="Skjermbilde av farger side 2 av 4">
-                </picture>
-            </div>
-        </div>
-        <div class="accessRad">
-            <div class="accessFargeKolonne">
-                <picture class="accessBilde">
-                    <source src="../pictures/accessFarger3.png" type="image/png">
-                    <img src="../pictures/accessFarger3.png" alt="Skjermbilde av farger side 3 av 4">
-                </picture>
-            </div>
-            <div class="accessFargeKolonne">
-                <picture class="accessBilde">
-                    <source src="../pictures/accessFarger4.png" type="image/png">
-                    <img src="../pictures/accessFarger4.png" alt="Skjermbilde av farger side 4 av 4">
-                </picture>
-            </div>
-        </div>
+        <article>
+        <div class="access-rad">
+            <picture>
+                <img src="../pictures/accessFarger3.png" alt="Skjermbilde av farger side 3 av 4">
+            </picture>
+            <picture>
+                <img src="../pictures/accessFarger4.png" alt="Skjermbilde av farger side 4 av 4">
+            </picture>
+        </article>
     </main>
+
     <!--Bunntekst-->
     <footer>
         <section>
             <h3>Kontakt oss</h3>
-            <address>Email: noe@email.no
-                Telefon: 12345678
+            <address>Email: <a href="mailto:noe@email.no">noe@email.no</a>
+                Telefon: <a href="tel:12345678">12345678</a>
             </address>
+        </section>
+        <section>
+            <img src="../pictures/eagle_black.png" alt="website logo displaying p35 in big letters">
+            </picture>
         </section>
         <section>
             <h3>Åpningstider</h3>

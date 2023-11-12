@@ -1,18 +1,31 @@
-/* === global === */
+/* === Global === */
+img {
+    max-width: 99%;
+}
+:root {
+    --maincolor: rgba(187, 203, 207, 0.7);
+}
 
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    background-color: rgb(239, 239, 239);
+    background-color: rgb(229, 229, 229);
 }
 
 footer {
     padding: 4vw;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(20, 52, 64);
     display: flex;
     justify-content: space-between;
-    color: rgb(255, 255, 255);
+    color: rgb(232 232 232);
+}
+
+footer section img {
+    width: 130px;
+}
+
+footer section {
+    font-weight: 300;
 }
 
 a, a:visited, a:active {
@@ -21,7 +34,7 @@ a, a:visited, a:active {
    }
 
 a:hover {
-    color: lightgreen;
+    color: rgba(99, 153, 174, 100);
 
 }
 
@@ -74,7 +87,7 @@ time, address {
 }
 
 
-/* === navbar === */
+/* === Navigasjonsbar === */
 
 .navbar-container {
     display: flex;
@@ -90,7 +103,7 @@ time, address {
     margin-left: 30px;
     margin-right: 30px;
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.07);
-    background-color: rgba(239, 239, 239, 1);
+    background-color: var(--maincolor);
     border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* safari support for blur */
@@ -165,8 +178,7 @@ header {
 .article-flex-container figure {
     flex: 0.7;
     margin: 10px 10px 20px 10px;
-    /* height: auto; */
-    max-height: 300px;
+    /* max-height: 300px; */
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
@@ -187,6 +199,9 @@ header {
     font-size: 0.8rem;
 }
 
+
+
+
 /* text box in article */
 .article-flex-text {
     margin: 10px 10px 20px 10px;
@@ -195,7 +210,7 @@ header {
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
-    background-color: rgb(245, 245, 245);
+    background-color: var(--maincolor);
 } ul {
     padding-left: 15px;
 }

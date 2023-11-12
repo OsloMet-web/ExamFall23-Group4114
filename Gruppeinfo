@@ -21,6 +21,7 @@ Gruppeoppgaver
     - navbar over bilde
     - fikse navbar
     - oversette navbaren
+    - bytte ut div bilde i nav til picture
 
     Elisabeth
     - accessability
@@ -33,7 +34,14 @@ Gruppeoppgaver
     - Og gjekke at alt funker på chrome, safari og firefox
     - Kommentarer i kode
     - Helt til slutt access testen og bytte ut bilder
-
+    - gå over camelCase og bytt det ut det :D 
+    - fjerne bilder
+    - bytte navn på filer
+    - dark mode
+    - fungerer det på telefon!
+    - footer skal ha sections? er ikke det til articles
+    - ikke ha linjeskift i tekst
+    - kommentarer på norsk
     
 
 
