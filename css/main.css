@@ -473,7 +473,7 @@ header {
     .flex-container2 {
         margin: 2px;
         padding: 2px;
-        background-color: rgb(244, 244, 244)9, 249);
+        background-color: rgb(244, 244, 244)9, 249;
     }
 
     .box1 {
@@ -484,9 +484,8 @@ header {
 
     .box2 {
         overflow: hidden; /* Hides overflowing content */
-    }
     
-
+ }
 }
 
 
