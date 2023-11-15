@@ -24,7 +24,7 @@ footer section img {
 
 /* ??? */
 img {
-    max-width: 99%;
+    max-width: 100%;
 }
 
 footer section {
@@ -333,14 +333,7 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
     margin: 70px;
     transition: transform 0.3s;
-  }
-
-  .box2 {
-    background-color:rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
+    }
   
   /* til polaroid bilde */
   .container {
@@ -389,26 +382,16 @@ header {
     /* font-family: 'Times New Roman', Times, serif */
 }
 
-/*Bilde til Tilgjengelighetstesten (4 bilder ved siden av hverandre)*/
-/*This shit wont make pictures smaller*/
-.accessRad {
-    width: auto;    /* La kolonnene tilpasse seg innholdet */
-    display: flex;  /* Bruk flexbox for layout */
-  }
-  
-.accessKolonne {
-    display: flex;             /* Bruk flexbox for layout */
-    justify-content: center;   /* Senter innhold horisontalt */
-    align-items: center;       /* Senter innhold vertikalt */
-    width: 100%;               /* Få kolonnen til å fylle sin overordnede container */
-
-  }
-.accessBilde {
-    max-width: 100%;           /* La bildet skalere innenfor div-boksen */
-    height: auto;              /* Behold høyde-bredde-forholdet for bildet */
+.box2 {
+    flex: 0.25;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
- @media (max-width: 700px){
+
+@media (max-width: 700px){
     .text-white {
         color: white; 
         font-size: 4.6vw;
@@ -440,7 +423,7 @@ header {
         padding-left: 7vw;
       }
 
-      /* bunntekst på bilder */
+    /* bunntekst på bilder */
       .bottomleft {
         position: absolute;
         right: 7vw;
