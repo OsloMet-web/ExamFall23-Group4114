@@ -45,22 +45,6 @@ time, address {
     font-style: normal;
 }
 
-/* ikke i bruk ? */
-
-.main-grid-container {
-    display: grid;
-    grid-template-columns: minmax(150px, 800px) 30px minmax(150px, 350px);
-    grid-template-rows: auto;
-}
-
-.grid-item-text {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.grid-item-pictures {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
 .bakgrunn {
     position: relative;
     height: 40vw;
