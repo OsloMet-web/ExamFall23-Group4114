@@ -25,54 +25,26 @@ Gruppeoppgaver
     - https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 
     Elisabeth
-    - accessability
-    - teste
-    - skrive om semantic elements innnenfor SEO
-    - skalering
+    - i am free to help with anything, just not grid or flex
 
     ALLE
-    - På slutten sjekke over grading sheet og finne nye oppgaver
-    - Og gjekke at alt funker på chrome, safari og firefox
-    - Kommentarer i kode
-    - Helt til slutt access testen og bytte ut bilder
+    - Sjekke over grading sheet!
+    - Funker alt på mobil, chrome, safari og firefox?
+    - Kommentarer i kode(NORSK), gjerne legge kommentarer i egen kode i css
     - gå over camelCase og bytt det ut det :D 
-    - fjerne bilder
+    - fjerne bilder som ikke brukes
     - bytte navn på filer
-    - dark mode
-    - fungerer det på telefon!
     - footer skal ha sections? er ikke det til articles
-    - ikke ha linjeskift i tekst
-    - kommentarer på norsk
+    - ikke ha linjeskift i tekst det fakker over når vi leverer (skjer når vi formater dokumentet)
     - fjerne klasse som ikke er i bruk
     - DARK MODE
     - STUDIESTEDER VÆRE SILLY
     
 
-
-
-
-
-
-
-• index.html should have a general introduction with at least one relevant image
-• One page must be "Accessibility" — see below
-• One page must be "Topical" — see below
-• The remaining (1 or 2) pages should have images and headings presenting a place or an aspect of the campus/ building, e.g. a canteen; the text may be "dummy text" - see below
-• All pages but one must share the same visual design
-• You may choose which (if any) one page should have a different design
-
-! Comment your code
-• Any semantic element deserves a super-short comment on what it is
-• Any CSS selector (in the CSS, not when used in HTML) deserves a comment, at least a descriptor
-• Any code that is used in scaling or responsive to screen-size deserves a comment
-• The main purpose for the comments should be to help a future developer take over your project and develop it further; for me, it helps weed out the most obvious copied-code-without-understanding
-
 Kommentarer i koden
-    Ethvert semantisk element fortjener en superkort kommentar om hva det er
-    Enhver CSS-velger (i CSS, ikke når den brukes i HTML) fortjener en kommentar, i det minste en beskrivelse
-    Enhver kode som brukes i skalering eller respons på skjermstørrelse, fortjener en kommentar
+    - Ethvert semantisk element fortjener en superkort kommentar om hva det er
+    - Enhver CSS-velger (i CSS, ikke når den brukes i HTML) fortjener en kommentar, i det minste en beskrivelse
+    - Enhver kode som brukes i skalering eller respons på skjermstørrelse, fortjener en kommentar
+   
     Hovedhensikten med kommentarene bør være å hjelpe en fremtidig utvikler til å overta prosjektet ditt og utvikle det videre; 
     for meg hjelper det med å luke ut de mest åpenbare problemene med kopiert kode uten
-
-Dummy text
-    Apart from the pages "Accessibility" and "Topical", you may use a Lorem-ipsum text. We shall not read the other texts, but we shall look for relevant and correct use of headings, links and <picture>/ <img> with alt-text. This is often easier to do correctly with actual texts than dummy-text. Even in a dummy-text, you should use real headings, like <h1>Study areas in P35</h1>…<h2>The library</h2>.
