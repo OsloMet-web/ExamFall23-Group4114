@@ -293,7 +293,7 @@ header {
 }
 
 /* bunntekst på bilder */
-.bottomleft {
+.bunntekst-høyre {
     position: absolute;
     bottom: 8px;
     right: 16px;
@@ -302,13 +302,13 @@ header {
     display: inline-block;
 }
 
-.pic {
+.bilde-link {
     min-width: 100%;
     max-height: 170px;
 }
 
 /* for bildelink */
-.polaroid {
+.bilde-link-bakgrunn {
     width: 19rem;
     height: 250px;
     background-color: rgb(219, 217, 217);
@@ -318,24 +318,24 @@ header {
     }
   
   /* til polaroid bilde */
-  .container {
+  .tekst-bilde-link {
     text-align: center;
     padding: 20px;
   }
 
   /* styler linken inne i container */
-  .container a {
+  .tekst-bilde-link a {
     /* color: rgb(30, 61, 61); */
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
   }
 
-  .polaroid:hover {
+  .bilde-link:hover {
     transform: scale(1.1);
   }
 
-  .flex-container {
+  .flex-introduksjon {
     background-color: rgba(8, 33, 33, 0);
     display: flex;
     flex-direction: row;
@@ -345,18 +345,18 @@ header {
     padding: 2vw;
   }
 
-  .text-white {
+  .flex-introduksjon-tekst {
     color: white; 
     font-size: 1.8vw;
   }
 
-.flex-container2 {
+.flex-hovedtekst {
     display: flex;
     background-color: rgb(255, 255, 255);
     justify-content: space-between;
 }
 
-.box1 {
+.hovedtekst-venstre {
     margin: 50px;
     flex: 0.5;
     background-color: rgb(255, 255, 255);
@@ -364,7 +364,7 @@ header {
     /* font-family: 'Times New Roman', Times, serif */
 }
 
-.box2 {
+.hovedtekst-høyre {
     flex: 0.25;
     background-color:rgb(255, 255, 255);
     display: flex;
@@ -374,7 +374,7 @@ header {
 
 
 @media (max-width: 700px){
-    .text-white {
+    .bakrunn > p {
         color: white; 
         font-size: 4.6vw;
       }
@@ -398,34 +398,34 @@ header {
         z-index: -1;
     } 
 
-    .flex-container {
+    .flex-introduksjon {
         display: flex;
         flex-direction: row;
         width: 85vw;
         padding-left: 7vw;
       }
 
-    /* bunntekst på bilder */
-      .bottomleft {
+    /* Kildehenvisning til bilder */
+      .bunntekst-høyre {
         position: absolute;
         right: 7vw;
         font-size: 2.5vw;
         color: rgb(255, 255, 255);
     }
 
-    .flex-container2 {
+    .flex-hovedtekst {
         margin: 2px;
         padding: 2px;
         background-color: rgb(244, 244, 244)9, 249;
     }
 
-    .box1 {
+    .hovedtekst-venstre {
 
         flex:content;
         font-size: 5.5vw;
     }
 
-    .box2 {
+    .hovedtekst-høyre {
         overflow: hidden; /* Hides overflowing content */
     
  }
