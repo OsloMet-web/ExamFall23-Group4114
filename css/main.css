@@ -1,7 +1,5 @@
 /* === Global === */
-img {
-    max-width: 99%;
-}
+
 :root {
     --maincolor: rgba(187, 203, 207, 0.7);
 }
@@ -24,6 +22,11 @@ footer section img {
     width: 130px;
 }
 
+/* ??? */
+img {
+    max-width: 99%;
+}
+
 footer section {
     font-weight: 300;
 }
@@ -31,15 +34,13 @@ footer section {
 a, a:visited, a:active {
     color: inherit;
     text-decoration: none;
-   }
+}
 
 a:hover {
-    color: rgba(99, 153, 174, 100);
-
+    color: rgb(99, 153, 174);
 }
 
 time, address {
-    /* !! make email and number clickable */
     white-space: pre-line;
     font-style: normal;
 }
