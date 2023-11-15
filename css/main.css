@@ -1,9 +1,5 @@
 /* === Global === */
 
-:root {
-    --maincolor: rgba(187, 203, 207, 0.7);
-}
-
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -96,10 +92,10 @@ time, address {
     z-index: 1;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.07);
-    background-color: var(--maincolor);
+    background-color: rgba(187, 203, 207, 0.7);
     border: 1px solid rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* safari support for blur */
@@ -133,11 +129,11 @@ time, address {
 }
 
 .navbar-container a:hover {
-    background-color: rgba(164, 164, 164, 0.17);
+    background-color: rgba(224, 224, 224, 0.5);
 }
 
 .current-active-tab {
-    background-color: rgba(164, 164, 164, 0.17);
+    background-color: rgba(224, 224, 224, 0.5);
 }
 
 /* burger menu icon (hidden on desktop) */
@@ -151,17 +147,16 @@ time, address {
     width: 50px;
 }
 
-/* === square design === */
+/* === Styling til firkanter til innhold === */
 
 header {
     margin: 10px 10px 40px 10px;
-    padding: 20px 40px;
+    padding: 20px 20px;
 }
 
-/* !! replace with apdding on smaller containers */
 .main-container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .article-flex-container {
@@ -195,9 +190,6 @@ header {
     font-size: 0.8rem;
 }
 
-
-
-
 /* text box in article */
 .article-flex-text {
     margin: 10px 10px 20px 10px;
@@ -206,7 +198,7 @@ header {
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
-    background-color: var(--maincolor);
+    background-color: rgba(187, 203, 207, 0.7);
 } ul {
     padding-left: 15px;
 }
@@ -370,21 +362,18 @@ header {
 
 .flex-container2 {
     display: flex;
-    background-color: rgb(255, 255, 255);
     justify-content: space-between;
 }
 
 .box1 {
     margin: 50px;
     flex: 0.5;
-    background-color: rgb(255, 255, 255);
     font-size: 23px;
     /* font-family: 'Times New Roman', Times, serif */
 }
 
 .box2 {
     flex: 0.25;
-    background-color:rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
