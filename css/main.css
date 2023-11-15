@@ -414,12 +414,6 @@ header {
     justify-content: flex-end;
 }
 
-/*Bilder av tilgjengelighetstesten (2 bilder ved siden av hverandre) på accessibility.html*/
-.access-rad {
-    width: auto;
-    display: flex;
-}
-
 
 @media (max-width: 700px){
     .text-white {
