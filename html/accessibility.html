@@ -39,24 +39,20 @@
     <header>
         <h1>Tilgjengelighetstest</h1>
         <!--En del av teksten er hentet fra linken til Lighthouse, bare oversatt-->
-        <p>For å sikre kvaliteten på vårt nettsted bruker vi <a
-            href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a>, en tilgjengelighetstestutvidelse for <a
-            href=«https://www.google.com/chrome/brand=YTUH&gclid=CjwKCAjwkY2qBhBDEiwAoQXK5fBmfCaNFYyYpeFwHXzuzgH0KB8b9GjFa4RhCobCpYxJY52km_9CyhoCASYQAvD_BwE&gclsrc=aw.ds»>Google
-            Chrome</a>. </p>
+        <p>For å sikre kvaliteten på vårt nettsted bruker vi <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a>, en tilgjengelighetstestutvidelse for <a href=«https://www.google.com/chrome/brand=YTUH&gclid=CjwKCAjwkY2qBhBDEiwAoQXK5fBmfCaNFYyYpeFwHXzuzgH0KB8b9GjFa4RhCobCpYxJY52km_9CyhoCASYQAvD_BwE&gclsrc=aw.ds»>Google Chrome</a>. </p>
     </header>
 
     <!--Hoveddelen-->
     <main class="main-container">
+        <!--Første tekstboks etter topptekst-->
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>Hvordan fungerer Lighthouse</h2>
                 <p>Dette verktøyet hjelper oss med å oppdage mulige problemer og sørge for at nettstedet vårt forbedrer kvaliteten. Med Lighthouse gjennomgår vi nettstedets struktur, innhold og funksjonalitet med disse vurderingskriteriene: </p>
                 <ul>
                     <li>Performance: Måler ytelse og finner muligheter for å øke hastigheten på sideinnlastingen.</li>
-                    <li>Accessiblity: Kan alle brukere få tilgang til innhold og navigere på nettstedet ditt effektivt?
-                    </li>
-                    <li>Best Practices: Forbedre «kodehelsen» til nettsiden din ved å følge følgende «..» for beste
-                        fremgangsmåtene.</li>
+                    <li>Accessiblity: Kan alle brukere få tilgang til innhold og navigere på nettstedet ditt effektivt?</li>
+                    <li>Best Practices: Forbedre «kodehelsen» til nettsiden din ved å følge følgende «..» for beste fremgangsmåtene.</li>
                     <li>SEO: Hvor godt kan søkemotorer forstå innholdet ditt?</li>
                     <li>PWA: Mål om nettstedet ditt er raskt, pålitelig og installerbart.</li>
                 </ul>
@@ -65,6 +61,8 @@
                 <p>Videre, har vi lagt hvert vurderingskriteriene for seg selv sammen med et eksempel fra lighthouse og hva vi har gjort etter for å få ordnet det.</p>
             </div>
         </article>
+
+        <!-- Bilde til teksten, men under teksten-->
         <article class="article-flex-container">
             <figure>
                 <img src="../pictures/lighthousebilde.webp" alt="Skjermbilde av nettleser sammen med Lighthouse der du ser Lightouse i bruk.">
@@ -73,12 +71,15 @@
                 </figcaption>
             </figure>
         </article>
+
+        <!--Andre tekstboksen med et bilde-->
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>Performance</h2>
                 <p>På en tilgjengelighetstest for index.html fikk vi 98 av 100 poeng i Performance. Første feilen involverer manglende bredde og lengde til bildeelementene. Etter å ha sett litt på det, så er bildene inni en div og ikke har behov for bredde og lengde. Dermed har vi latt å ikke gjøre noe med det. </p>
                 <p>Den andre feilen dreier seg om nettleserens lagring av kopier ved navigasjon, som ikke kan løses direkte med CSS eller HTML, men krever optimaliseringssjekk.</p>
             </div>
+            <!--Bilde-->
             <figure>
                 <img src="../pictures/performance.png" alt="skjermbilde av performance-feilmelding fra lighthouse">
                 <figcaption>
@@ -87,12 +88,13 @@
             </figure>
         </article>
 
+        <!--Tredje tekstboks med bilde-->
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>Accessibility</h2>
                 <p>På samme side på index.html viser vi også til tilgjengeligheten. Her fikk vi 93 av 100 poeng i Accessibility. I denne versjonen av nettsiden så mangler teksten som skal vises for brukeren som en klikkbar lenke. Greia er egentlig at det er et bilde som er lenken.</p>
             </div>
-
+            <!--Bilde-->
             <figure>
                 <img src="../pictures/accessibility.png" alt="skjermbilde av accessibility-feilmelding fra lighthouse">
                 <figcaption>
@@ -100,13 +102,14 @@
                 </figcaption>
             </figure>
         </article>
-
+        
+        <!--Fjerde tekstboks med bilde-->
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>Best practices</h2>
                 <p>Vi holder oss på index.html, og her fikk vi 95 av 100 poeng i Best Practices.  Vi ønsket at gjeldene bilde skal passe en boks, og ser ikke behov for å beholde originalstørrelse da vi ikke får ønsket design.</p>                
             </div>
-
+            <!--Bilde-->
             <figure>
                 <img src="../pictures/bestprac.png" alt="skjermbilde av best-practices-feilmelding fra lighthouse">
                 <figcaption>
@@ -115,6 +118,7 @@
             </figure>
         </article>
 
+        <!--Femte tekstboks med bilde-->
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>SEO</h2>
@@ -122,7 +126,7 @@
                 <p> På siden accessibility.html fikk vi 90 av 100 poeng, primært fordi vi glemte å legge til alternativ tekst på et bilde. Dette er imidlertid en rask justering som vil bli gjort samtidig med synkroniseringen av denne teksten. (;</p>
                 <p> åre øvrige HTML-filer bruker semantiske elementer korrekt, for eksempel ved å anvende "nav" for navigasjonsknapper, "header" for toppteksten, "main" for hovedteksten, og "footer" for bunnteksten. Dette bidrar til en bedre forståelse for søkemotorer, øker lesbarheten, og forbedrer den generelle strukturen på nettstedet. <p>
             </div>
-
+            <!--Bilde-->
             <figure>
                 <img src="../pictures/seo.png" alt="skjermbilde av SEO-feilmelding fra lighthouse">
                 <figcaption>
@@ -131,12 +135,15 @@
             </figure>
         </article>
 
+        <!--Sjette tekstboks-->
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>Honorable Mention: PWA</h2>
                 <p>Vi tester ikke PWA fordi vi lager ikke "Progressive Web Apper" fordi det er ikke en del av pensum/oppgaven.</p>
             </div>
         </article>
+
+        <!--Syvende tekstboks-->
         <article class="article-flex-container">
             <div class="article-flex-text">
                 <h2>VÅR ENDELIGE TILGJENGELIGHETSTEST</h2>
@@ -145,7 +152,7 @@
             </div>
         </article>
 
-        <!--Bilder av den endelige tilgjengelighetstesten-->
+        <!--Bilder av den etterlengte tilgjengelighetstesten-->
         <article class="article-flex-container">
             <picture>
                 <img src="../pictures/accessbilde1.webp" alt="Skjermbilde av farger side 1 av 4">
