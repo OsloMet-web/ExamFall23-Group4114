@@ -11,20 +11,20 @@
 </head>
 
 <body>
-    <!--Navigasjonsbar-->
+    <!-- navigasjonsbar -->
     <nav class="navbar-container">
-        <!--Navbar nettside logo-->
+        <!-- navbar nettside logo -->
         <a id="p35-rounded" href="index.html">
-            <!--Bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo"-->
+            <!-- bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo" -->
             <img src="pictures/eagle_new.png" alt="nettstedets logo av en sort ørn med teksten tech-topia">
         </a>
 
-        <!--Burgermeny ikon for mobil-->
-        <div id="navbar-burgericon">
+        <!-- burgermeny ikon for mobil -->
+        <picture id="navbar-burgericon">
             <img src="pictures/burger.webp" alt="burger icon which opens the website menu">
-        </div>
+        </picture>
 
-        <!--Navbar knapper-->
+        <!-- navbar knapper -->
         <div class="navbar-buttons">
             <ul>
                 <li><a href="html/accessibility.html">Tilgjengelighet</a></li>
@@ -35,29 +35,26 @@
         </div>
     </nav>
 
-    <!--Topptekst, obs header og div er det samme-->
-    
-
-
-    <!--Hoveddel-->
-    <main>
-        <!--Teksten plassert over bilde, der bilde er en bakgrunn-->
-        <div class="bakgrunn">
-            <div class="flex-introduksjon">
-                <div class="flex-introduksjon-tekst">
-                    <h1>Pilestredet 35</h1>
-                    <p>Er du klar for å trå inn i teknologiens eventyrland? Velkommen til P35, også kjent som "Techno-Party Palace"! Dette bygget er et Tech-Topia der magien skjer for Oslomet's teknologistudenter. Så ta på deg de fargerike nerdbrillene dine, for her er det alltid moro og kreativitet! :3 xDDD </p>
-                </div>
-            </div>
-            <!--Bunntekst i høyre hjørne av bakgrunnsbilde-->
-            <div class="bunntekst-høyre">
-                <p>Foto: Eget</p>
-            </div>
+    <header class="header-without-padding">
+        <picture class="main-page-image">
+            <img src="pictures/img.webp" alt="fsefsef">
+        </picture>
+        <div class="main-page-header-text">
+            <h1>Pilestredet 35</h1>
+            <p>Er du klar for å trå inn i teknologiens eventyrland? Velkommen til P35, også kjent som
+                "Techno-Party
+                Palace"! Dette bygget er et Tech-Topia der magien skjer for Oslomet's teknologistudenter. Så ta
+                på
+               deg de
+                fargerike nerdbrillene dine, for her er det alltid moro og kreativitet!
+            </p>
+            <p>Foto: eget</p>
         </div>
-    
-        <!--Hovedtekst i en bås som er 1/2 av siden-->
-        <div class="flex-hovedtekst">
-            <div class="hovedtekst-venstre">
+    </header>
+
+    <main class="main-container">
+        <section class="section-flex-container">
+            <dev class="section-flex-text">
                 <h2>Høydepunkter</h2>
                 <p>Datatorget på fjerde etasje er et rom fullstappet med så mange datasultne hjerner at oksygenet selv
                     får
@@ -82,12 +79,10 @@
                     rettene
                     blir
                     servert. Velkommen til teknologiens høyborg, velkommen til P35 – der teknologi blir en fest!</p>
-            </div>
+            </dev>
 
-            <!--Søte lenkebokser i den andre båsen som er 1/2 av siden-->
-            <div class="hovedtekst-høyre">
-                <!--Lengeboks nummer 1-->
-                <a href="https://www.nrk.no/">
+            <div class="container-item-slim">
+                <a href="html/studieavbrekk.html">
                     <div class="bilde-link-bakgrunn">
                         <picture>
                             <img class="bilde-link" src="./pictures/1.webp" alt="bilde av en arbeidskrok">
@@ -97,9 +92,8 @@
                         </div>
                     </div>
                 </a>
-                
-                <!--Lenkeboks nummer 2-->
-                <a href="https://www.nrk.no/">
+
+                <a href="html/studiesteder.html">
                     <div class="bilde-link-bakgrunn">
                         <picture>
                             <img class="bilde-link" src="./pictures/2.webp" alt="bilde av en arbeidskrok">
@@ -110,10 +104,11 @@
                     </div>
                 </a>
             </div>
+
         </div>
     </main>
 
-    <!--Bunntekst-->
+    <!-- footer på bunnen -->
     <footer>
         <section>
             <h3>Kontakt oss</h3>
@@ -134,5 +129,4 @@
         </section>
     </footer>
 </body>
-
 </html>

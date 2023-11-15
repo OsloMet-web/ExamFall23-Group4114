@@ -1,69 +1,100 @@
-/* === Global === */
-
+/* farge variabler for enkel bytte til dark mode i media query */
 :root {
-    --maincolor: rgba(187, 203, 207, 0.7);
+    --main-elemenet-color: rgba(187, 203, 207, 0.7);
+    --main-text-color: rgb(0, 0, 0);
+    --main-background-color: rgb(229, 229, 229);
+    --footer-background-color: rgb(20, 52, 64);
+    --footer-text-color: rgb(238, 238, 238);
+    --navbar-highlight-color: rgba(234, 234, 234, 0.3);
+    --border-color: rgba(0, 0, 0, 0.1);
 }
 
+/* fjerner default margin i body og velger font og bakgrunnsfarge */
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(229, 229, 229);
+    background-color: var(--main-background-color);
 }
 
+/* setter farge på teksten i main (setter farge på hovedelementene fordi footer har annen tekst-farge) */
+main {
+    color: var(--main-text-color);
+}
+
+/* header: flytter listen litt til venstre for å aligne med resten av siden */
+header ul {
+    padding-left: 1rem;
+}
+
+.header-with-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    color: var(--main-text-color);
+}
+
+/* no padding for homepage header and non changing color because of image */
+.header-without-padding {
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+/* footer: gjøres om til flexbox for å seksjonere elementene inni */
 footer {
-    padding: 4vw;
-    background-color: rgb(20, 52, 64);
     display: flex;
     justify-content: space-between;
-    color: rgb(232 232 232);
+    padding: 2rem;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
 }
 
+/* footer: setter width på logoen */
 footer section img {
     width: 130px;
 }
 
-/* ??? */
-img {
-    max-width: 100%;
-}
-
+/* footer: tynnere tekst */
 footer section {
     font-weight: 300;
 }
 
-a, a:visited, a:active {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(99, 153, 174);
-}
-
+/* tekst formatering på time og address, som brukes i footeren */
 time, address {
     white-space: pre-line;
     font-style: normal;
 }
 
+/* fjerner default farger og underlinje fra alle linker */
+a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
 
-/* === Navigasjonsbar === */
+/* farge på liner man har musepekeren over */
+a:hover {
+    color: rgb(99, 153, 174);
+}
+
+/* === navigasjonsbar === */
 
 .navbar-container {
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
     height: 50px;
-    
-    top: 5px; /* height above navbar when floating */
-    border-radius: 15px; /* rounded navbar */
     z-index: 1;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
+    top: 0.75rem; /* avstand fra toppen */
+    left: 2rem; /* avstand fra venstre side */
+    right: 1rem; /* avstand fra høyre side */
+    width: calc(100% - 4rem); /* setter width til 100% av body sin width minus 4rem */
+    /* calc fra www.w3schools.com/cssref/func_calc.php */
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.07);
-    background-color: var(--maincolor);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--main-elemenet-color);
+    border-color: var(--border-color);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* safari support for blur */
 }
@@ -72,15 +103,11 @@ time, address {
     height: 46px;
 }
 
-#p35-rounded {
-    border-radius: 15px; 
-}
-
 .navbar-buttons ul {
     display: flex;
     flex-direction: row;
     height: 100%;
-    padding: 0;
+    padding-left: 0;
 }
 
 .navbar-buttons li {
@@ -90,17 +117,17 @@ time, address {
 .navbar-buttons li a {
     display: block;
     padding: 0.95rem;
-    color: black;
+    color: var(--main-text-color);
     text-decoration: none;
     border-radius: 15px; 
 }
 
 .navbar-container a:hover {
-    background-color: rgba(164, 164, 164, 0.17);
+    background-color: var(--navbar-highlight-color)
 }
 
 .current-active-tab {
-    background-color: rgba(164, 164, 164, 0.17);
+    background-color: var(--navbar-highlight-color)
 }
 
 /* burger menu icon (hidden on desktop) */
@@ -109,78 +136,72 @@ time, address {
     right: 0;
 }
 
-#navbar-burgericon img {
-    height: 100%;
-    width: 50px;
-}
-
-/* === square design === */
-
-header {
-    margin: 10px 10px 40px 10px;
-    padding: 20px 40px;
-}
-
-/* !! replace with apdding on smaller containers */
-.main-container {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.article-flex-container {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 40px;
-    /* max-height: 300px; */
-}
-
-.article-flex-container figure {
-    flex: 0.7;
-    margin: 10px 10px 20px 10px;
-    /* max-height: 300px; */
+#p35-rounded {
     border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
+    padding-left: 5px;
 }
 
-.article-flex-container figure img {
+/* === firkant design === */
+
+.main-container {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.section-flex-container {
+    display: flex;
+    padding-bottom: 4rem;
+}
+
+.section-flex-container figure {
+    flex: 0.7;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: var(--border-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
+    margin: 0.5rem;
+}
+
+.section-flex-container figure img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
 }
 
-/* caption underneith figure */
-.article-flex-container figure figcaption {
+.section-flex-container figure figcaption {
     position: relative;
     left: 5px;
     top: 2px;
     font-size: 0.8rem;
 }
 
-
-
-
-/* text box in article */
-.article-flex-text {
-    margin: 10px 10px 20px 10px;
+.section-flex-text {
     flex: 1;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
-    background-color: var(--maincolor);
-} ul {
-    padding-left: 15px;
+    background-color: var(--main-elemenet-color);
+    margin: 10px;
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-style: solid;
 }
 
 
-/*  === media query for smaller screens === */
 
-/* !! riktig media query? */
-/* !! IDs at bottom */
 
-@media (max-width: 700px){
+/*  === media query som aktiveres på mindre skjermer (700px eller mindre) === */
+
+@media (max-width: 710px){
+
+    /* sjuler logoen i footere på mobil */
+    footer section img {
+        display: none;
+    }
 
     .text-white {
         color: rgb(161, 23, 23); 
@@ -196,7 +217,8 @@ header {
 
     .navbar-container {
         flex-direction: column;
-        height: 100%;
+        height: auto;
+        width: 90%;
     }
 
     /* hides navbar links on mobile */
@@ -224,212 +246,106 @@ header {
         background-color: rgba(0, 0, 0, 0)
     }
 
-    /* === square design === */
+    /* === Firkant design === */
 
-    .article-flex-container {
+    .section-flex-container {
         flex-direction: column;
         max-height: 100%;
         padding-bottom: 50px;
     }
 
-    .article-flex-container figure {
+    .section-flex-container figure {
         max-height: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    /* makes caption not take up space and sit underneith figure*/
-    .article-flex-container figure figcaption {
-        height: 0;
-    }
-
-    /* For index sida */
-
-    .bakgrunn {
-        height: 60vw;
-    }
     
-    .bakgrunn::before { 
-        content: ""; 
-        background-image: url("../pictures/img.webp");
-        background-size: cover;
-        background-position: center;
-        filter: brightness(0%);
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        width: 100%; 
-        height: 100%; 
-        z-index: -1;
-    } 
-
-    .flex-container {
-        background-color: rgb(44, 212, 212);
-        display: flex;
-        flex-direction: row;
-        width: 1px;
-        justify-content: flex-start;
-        align-items: center;
-      }
 }
 
-.bakgrunn {
-    position: relative;
-    height: 40vw;
+/* dark-mode: bytter fargerene på siden hvis brukeren har dark-mode på enheten sin */
+@media (prefers-color-scheme: dark) {
+    /* Bytter farge variablene fra lyse til mørke farger */
+    :root {
+        --main-elemenet-color: rgba(37, 45, 65, 0.7);
+        --main-text-color: rgb(243, 243, 243);
+        --main-background-color: rgb(22 23 25);
+        --navbar-highlight-color: rgba(167, 167, 167, 0.119);
+        --footer-background-color: rgb(210, 212, 214);
+        --footer-text-color: rgb(10, 10, 10);
+        --border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* inverterer fargen til bildene i navbaren til nesten helt hvit (dette ser kun bra ut hvis logoen er helt svart, som den er) */
+    /* developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
+    footer img {
+        filter: invert();
+    }
+
+    /* inverterer fargen til logoen i footeren */
+    .navbar-container img {
+        filter: invert(0.95);
+    }
 }
 
-.bakgrunn::before { 
-    content: ""; 
-    background-image: url("../pictures/img.webp");
-    background-size: cover;
-    background-position: center;
+.main-page-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
     filter: brightness(30%);
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    z-index: -1;
+    padding-bottom: 4rem;
 }
 
-/* bunntekst på bilder */
-.bunntekst-høyre {
+.main-page-header-text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 8px;
-    right: 16px;
-    font-size: 1.5vw;
-    color: aliceblue;
-    display: inline-block;
+    top: 8rem; /* for å plassere header teksten under navbaren */
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+/* ting for index kombinert med viktor sitt */
+
+.tekst-bilde-link a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .bilde-link {
     min-width: 100%;
     max-height: 170px;
+    object-fit: cover;
 }
 
-/* for bildelink */
 .bilde-link-bakgrunn {
-    width: 19rem;
     height: 250px;
-    background-color: rgb(219, 217, 217);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-    margin: 70px;
+    background-color: var(--main-elemenet-color);
     transition: transform 0.3s;
-    }
-  
-  /* til polaroid bilde */
-  .tekst-bilde-link {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    border-color: var(--border-color);
+    border-width: 1px;
+    border-style: solid;
+    /* border-radius: 15px; */
+}
+
+.tekst-bilde-link {
     text-align: center;
     padding: 20px;
-  }
-
-  /* styler linken inne i container */
-  .tekst-bilde-link a {
-    /* color: rgb(30, 61, 61); */
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-  }
-
-  .bilde-link-bakgrunn:hover {
-    transform: scale(1.1);
-  }
-
-  .flex-introduksjon {
-    background-color: rgba(8, 33, 33, 0);
-    display: flex;
-    flex-direction: row;
-    width: 40vw;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2vw;
-  }
-
-  .flex-introduksjon-tekst {
-    color: white; 
-    font-size: 1.8vw;
-  }
-
-.flex-hovedtekst {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    justify-content: space-between;
 }
 
-.hovedtekst-venstre {
-    margin: 50px;
-    flex: 0.5;
-    background-color: rgb(255, 255, 255);
-    font-size: 1.5vw;
-    /* font-family: 'Times New Roman', Times, serif */
+.bilde-link-bakgrunn:hover {
+    transform: scale(1.05);
 }
 
-.hovedtekst-høyre {
-    flex: 0.25;
-    background-color:rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+/* container item with 0.4 flex */
+.container-item-slim {
+    flex: 0.4;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-
-
-@media (max-width: 700px){
-    .bakrunn > p {
-        color: white; 
-        font-size: 4.6vw;
-      }
-
-      .bakgrunn {
-        width: auto;
-        height: 90vw;
-    }
-    
-    .bakgrunn::before { 
-        content: ""; 
-        background-image: url("../pictures/img.webp");
-        background-size: cover;
-        background-position: center;
-        filter: brightness(30%);
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        width: 100%; 
-        height: 100%; 
-        z-index: -1;
-    } 
-
-    .flex-introduksjon {
-        display: flex;
-        flex-direction: row;
-        width: 85vw;
-        padding-left: 7vw;
-      }
-
-    /* Kildehenvisning til bilder */
-      .bunntekst-høyre {
-        position: absolute;
-        right: 7vw;
-        font-size: 2.5vw;
-        color: rgb(255, 255, 255);
-    }
-
-    .flex-hovedtekst {
-        margin: 2px;
-        padding: 2px;
-        background-color: rgb(244, 244, 244)9, 249;
-    }
-
-    .hovedtekst-venstre {
-
-        flex:content;
-        font-size: 5.5vw;
-    }
-
-    .hovedtekst-høyre {
-        overflow: hidden; /* Hides overflowing content */
-    
- }
-}
-
-
-     
