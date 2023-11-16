@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Forklaring av tilgjengelighetsvalg gjort under utvikling av nettsiden">
-    <title>Accsessibility-test</title>
+    <title>Tilgjengelighetstest</title>
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/menu.js" defer></script>
 </head>
@@ -13,11 +13,11 @@
 <body>
     <!-- navigasjonsbar -->
     <nav class="navbar-container">
-        <!-- bavbar nettside logo -->
-         <a id="p35-rounded" href="../index.html">
-             <!-- bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo" -->
-             <img src="../pictures/eagle_new.png" alt="nettstedets logo av en sort ørn med teksten tech-topia">
-         </a>
+        <!-- navbar nettside logo -->
+        <a id="p35-rounded" href="../index.html">
+            <!-- bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo" -->
+            <img src="../pictures/eagle_new.png" alt="nettstedets logo av en sort ørn med teksten tech-topia">
+        </a>
 
         <!-- burgermeny ikon for mobil -->
         <picture id="navbar-burgericon">
@@ -42,12 +42,14 @@
         <p>For å sikre kvaliteten på vårt nettsted bruker vi <a
             href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a>, en tilgjengelighetstestutvidelse for <a
             href=«https://www.google.com/chrome/brand=YTUH&gclid=CjwKCAjwkY2qBhBDEiwAoQXK5fBmfCaNFYyYpeFwHXzuzgH0KB8b9GjFa4RhCobCpYxJY52km_9CyhoCASYQAvD_BwE&gclsrc=aw.ds»>Google
-            Chrome</a>. </p>
+            Chrome.</a></p>
     </header>
 
     <!-- hoveddelen-->
     <main class="main-container">
+        <!-- hver section er en flex-box som skalerer elemenetene inni -->
         <section class="section-flex-container">
+            <!-- section-flex-text til kun tekst-->
             <div class="section-flex-text">
                 <h2>Hvordan fungerer Lighthouse</h2>
                 <p>Dette verktøyet hjelper oss med å oppdage mulige problemer og sørge for at nettstedet vårt forbedrer kvaliteten. Med Lighthouse gjennomgår vi nettstedets struktur, innhold og funksjonalitet med disse vurderingskriteriene: </p>
@@ -63,24 +65,28 @@
                 <p>Videre, har vi lagt hvert vurderingskriteriene for seg selv sammen med et eksempel fra lighthouse og hva vi har gjort etter for å få ordnet det.</p>
             </div>
         </section>
+
         <section class="section-flex-container">
+            <!-- bilde med forklaring og credit -->
             <figure>
                 <img src="../pictures/lighthousebilde.webp" alt="Skjermbilde av nettleser sammen med Lighthouse der du ser Lightouse i bruk.">
                 <figcaption>
-                    Eksempelbilde av hvordan bruk av Lighthouse ser ut
+                    Eksempelbilde av hvordan bruk av Lighthouse ser ut. Bilde: eget
                 </figcaption>
             </figure>
         </section>
+
         <section class="section-flex-container">
             <div class="section-flex-text">
                 <h2>Performance</h2>
                 <p>På en tilgjengelighetstest for index.html fikk vi 98 av 100 poeng i Performance. Første feilen involverer manglende bredde og lengde til bildeelementene. Etter å ha sett litt på det, så er bildene inni en div og ikke har behov for bredde og lengde. Dermed har vi latt å ikke gjøre noe med det. </p>
                 <p>Den andre feilen dreier seg om nettleserens lagring av kopier ved navigasjon, som ikke kan løses direkte med CSS eller HTML, men krever optimaliseringssjekk.</p>
             </div>
+            <!-- bilde med forklaring og credit -->
             <figure>
                 <img src="../pictures/performance.png" alt="skjermbilde av performance-feilmelding fra lighthouse">
                 <figcaption>
-                    Skjermbilde med Performance-eksempel fra nettsiden
+                    Skjermbilde med Performance-eksempel fra nettsiden. Bilde: eget
                 </figcaption>
             </figure>
         </section>
@@ -90,11 +96,11 @@
                 <h2>Accessibility</h2>
                 <p>På samme side på index.html viser vi også til tilgjengeligheten. Her fikk vi 93 av 100 poeng i Accessibility. I denne versjonen av nettsiden så mangler teksten som skal vises for brukeren som en klikkbar lenke. Greia er egentlig at det er et bilde som er lenken.</p>
             </div>
-            <!--Bilde-->
+            <!-- bilde med forklaring og credit -->
             <figure>
                 <img src="../pictures/accessibility.png" alt="skjermbilde av accessibility-feilmelding fra lighthouse">
                 <figcaption>
-                    Skjermbilde med Accessibility-eksempel fra nettsiden
+                    Skjermbilde med Accessibility-eksempel fra nettsiden. Bilde: eget
                 </figcaption>
             </figure>
         </section>
@@ -104,11 +110,11 @@
                 <h2>Best practices</h2>
                 <p>Vi holder oss på index.html, og her fikk vi 95 av 100 poeng i Best Practices.  Vi ønsket at gjeldene bilde skal passe en boks, og ser ikke behov for å beholde originalstørrelse da vi ikke får ønsket design.</p>                
             </div>
-
+            <!-- bilde med forklaring og credit -->
             <figure>
                 <img src="../pictures/bestprac.png" alt="skjermbilde av best-practices-feilmelding fra lighthouse">
                 <figcaption>
-                    Skjermbilde med "Best practices"-eksempel fra nettsiden
+                    Skjermbilde med "Best practices"-eksempel fra nettsiden. Bilde: eget
                 </figcaption>
             </figure>
         </section>
@@ -121,10 +127,11 @@
                 <p> åre øvrige HTML-filer bruker semantiske elementer korrekt, for eksempel ved å anvende "nav" for navigasjonsknapper, "header" for toppteksten, "main" for hovedteksten, og "footer" for bunnteksten. Dette bidrar til en bedre forståelse for søkemotorer, øker lesbarheten, og forbedrer den generelle strukturen på nettstedet. <p>
             </div>
 
+            <!-- bilde med forklaring og credit -->
             <figure>
                 <img src="../pictures/seo.png" alt="skjermbilde av SEO-feilmelding fra lighthouse">
                 <figcaption>
-                    Skjermbilde med SEO-eksempel fra nettsiden
+                    Skjermbilde med SEO-eksempel fra nettsiden. Bilde: eget
                 </figcaption>
             </figure>
         </section>
@@ -135,6 +142,7 @@
                 <p>Vi tester ikke PWA fordi vi lager ikke "Progressive Web Apper" fordi det er ikke en del av pensum/oppgaven.</p>
             </div>
         </section>
+
         <section class="section-flex-container">
             <div class="section-flex-text">
                 <h2>VÅR ENDELIGE TILGJENGELIGHETSTEST</h2>
@@ -161,18 +169,21 @@
         </section>
     </main>
 
-    <!-- footer på bunnen -->
+    <!-- footer for kontaktinfo og åpningstider -->
     <footer>
+        <!-- kontaktinfo -->
         <section>
             <h3>Kontakt oss</h3>
             <address>Email: <a href="mailto:noe@email.no">noe@email.no</a>
                 Telefon: <a href="tel:12345678">12345678</a>
             </address>
         </section>
+        <!-- logo -->
         <section>
             <img src="../pictures/eagle_black.png" alt="website logo displaying p35 in big letters">
             </picture>
         </section>
+        <!-- åpningstider -->
         <section>
             <h3>Åpningstider</h3>
             <time>Man - Fre: 10.00 - 12.00
