@@ -16,28 +16,11 @@ body {
     background-color: var(--main-background-color);
 }
 
-/* setter farge på teksten i main (setter farge på hovedelementene fordi footer har annen tekst-farge) */
+/* setter farge på teksten i main */
 main {
     color: var(--main-text-color);
-}
-
-/* header: flytter listen litt til venstre for å aligne med resten av siden */
-header ul {
-    padding-left: 1rem;
-}
-
-.header-with-padding {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-    color: var(--main-text-color);
-}
-
-/* no padding for homepage header and non changing color because of image */
-.header-without-padding {
-    padding: 0;
-    color: rgb(255, 255, 255);
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
 }
 
 /* footer: gjøres om til flexbox for å seksjonere elementene inni */
@@ -59,22 +42,41 @@ footer section {
     font-weight: 300;
 }
 
-/* tekst formatering på time og address, som brukes i footeren */
-time, address {
+/* tekst formatering på time og address i footeren*/
+footer time, footer address {
     white-space: pre-line;
     font-style: normal;
 }
 
-/* fjerner default farger og underlinje fra alle linker */
-a, a:visited, a:active {
-    color: inherit;
+footer a {
     text-decoration: none;
 }
 
-/* farge på liner man har musepekeren over */
+/* fjerner farger på linker */
+a, a:visited, a:active {
+    color: inherit;
+}
+
+/* custom farge på linker man har musepekeren over */
 a:hover {
     color: rgb(99, 153, 174);
 }
+
+
+.header-with-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    color: var(--main-text-color);
+}
+
+/* no padding for homepage header and non changing color because of image */
+.header-without-padding {
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
 
 /* === navigasjonsbar === */
 
@@ -141,147 +143,7 @@ a:hover {
     padding-left: 5px;
 }
 
-/* === firkant design === */
-
-main {
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-}
-
-.section-flex-container {
-    display: flex;
-    padding-bottom: 4rem;
-}
-
-.section-flex-container figure {
-    flex: 0.7;
-    margin: 0.5rem;
-}
-
-.section-flex-container figure img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-.section-flex-container figure figcaption {
-    position: relative;
-    left: 5px;
-    top: 2px;
-    font-size: 0.8rem;
-}
-
-.section-flex-text {
-    flex: 1;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
-    background-color: var(--main-elemenet-color);
-    margin: 10px;
-    border-width: 1px;
-    border-color: var(--border-color);
-    border-style: solid;
-}
-
-
-
-
-/*  === media query som aktiveres på mindre skjermer (700px eller mindre) === */
-
-@media (max-width: 710px){
-
-    /* sjuler logoen i footere på mobil */
-    footer section img {
-        display: none;
-    }
-
-    .text-white {
-        color: rgb(161, 23, 23); 
-        font-size: 2vw;
-      }
-
-    /* === navbar === */
-
-    #navbar-burgericon {
-        display: block;
-        position: absolute;
-    }
-
-    .navbar-container {
-        flex-direction: column;
-        height: auto;
-        width: 90%;
-    }
-
-    /* hides navbar links on mobile */
-    .navbar-buttons{
-        width: 100%;
-        display: none;
-    }
-
-    /* list becomes vertical menu */
-    .navbar-buttons ul {
-        flex-direction: column;
-    }
-
-    /* centers the text when in menu mode */
-    .navbar-buttons ul li {
-        text-align: center;
-    }
-
-    /* used with JS to make menu appear when burgericon is pressed */
-    .navbar-buttons.active {
-        display: block;
-    }
-
-    .current-actvie-tab {
-        background-color: rgba(0, 0, 0, 0)
-    }
-
-    /* === Firkant design === */
-
-    .section-flex-container {
-        flex-direction: column;
-        max-height: 100%;
-        padding-bottom: 50px;
-    }
-
-    .section-flex-container figure {
-        max-height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    
-}
-
-/* dark-mode: bytter fargerene på siden hvis brukeren har dark-mode på enheten sin */
-@media (prefers-color-scheme: dark) {
-    /* Bytter farge variablene fra lyse til mørke farger */
-    :root {
-        --main-elemenet-color: rgba(37, 45, 65, 0.7);
-        --main-text-color: rgb(243, 243, 243);
-        --main-background-color: rgb(22 23 25);
-        --navbar-highlight-color: rgba(167, 167, 167, 0.119);
-        --footer-background-color: rgb(210, 212, 214);
-        --footer-text-color: rgb(10, 10, 10);
-        --border-color: rgba(255, 255, 255, 0.1);
-    }
-
-    /* inverterer fargen til bildene i navbaren til nesten helt hvit */
-    /* developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
-    footer img {
-        filter: invert(0.95);
-    }
-
-    /* inverterer fargen til logoen i footeren */
-    .navbar-container img {
-        filter: invert(0.95);
-    }
-}
+/* index.html */
 
 .main-page-image img {
     width: 100%;
@@ -344,3 +206,123 @@ main {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+/* === firkant design === */
+
+.section-flex-container {
+    display: flex;
+    padding-bottom: 4rem;
+}
+
+.section-flex-container figure {
+    flex: 0.7;
+    margin: 0.5rem;
+}
+
+.section-flex-container figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.section-flex-container figure figcaption {
+    position: relative;
+    left: 5px;
+    top: 2px;
+    font-size: 0.8rem;
+}
+
+.section-flex-text {
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
+    background-color: var(--main-elemenet-color);
+    margin: 10px;
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-style: solid;
+}
+
+/*  === media query som aktiveres på mindre skjermer (710px eller mindre) === */
+
+@media (max-width: 710px){
+
+    /* sjuler logoen i footer */
+    footer section img {
+        display: none;
+    }
+
+    #navbar-burgericon {
+        display: block;
+        position: absolute;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    /* hides navbar links on mobile */
+    .navbar-buttons{
+        width: 100%;
+        display: none;
+    }
+
+    /* listen i navbaren blir vertikal */
+    .navbar-buttons ul {
+        flex-direction: column;
+    }
+
+    /* midtstiller teksten i menyen */
+    .navbar-buttons ul li {
+        text-align: center;
+    }
+
+    /* brukt med JS for å vise menyen når meny knappen er trykket */
+    .navbar-buttons.active {
+        display: block;
+    }
+
+    /* fanen som er aktiv er lysere enn andre */
+    .current-actvie-tab {
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+    /* bytter section flex-boksene til collumn så alt vises på mindre skjermer */
+    .section-flex-container {
+        flex-direction: column;
+        max-height: 100%;
+        padding-bottom: 50px;
+    }
+}
+
+/* dark-mode: bytter fargerene på siden hvis brukeren har dark-mode på enheten sin */
+@media (prefers-color-scheme: dark) {
+    /* bytter farge variablene fra lyse til mørke farger */
+    :root {
+        --main-elemenet-color: rgba(37, 45, 65, 0.7);
+        --main-text-color: rgb(243, 243, 243);
+        --main-background-color: rgb(22 23 25);
+        --navbar-highlight-color: rgba(167, 167, 167, 0.119);
+        --footer-background-color: rgb(210, 212, 214);
+        --footer-text-color: rgb(10, 10, 10);
+        --border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* inverterer fargen til bildene i navbaren til nesten helt hvit */
+    /* developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
+    footer img {
+        filter: invert(0.95);
+    }
+
+    /* inverterer fargen til logoen i footeren */
+    .navbar-container img {
+        filter: invert(0.95);
+    }
+}
+
