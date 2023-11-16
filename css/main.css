@@ -305,15 +305,8 @@ a:hover {
         --main-text-color: rgb(243, 243, 243);
         --main-background-color: rgb(22 23 25);
         --navbar-highlight-color: rgba(167, 167, 167, 0.119);
-        --footer-background-color: rgb(210, 212, 214);
-        --footer-text-color: rgb(10, 10, 10);
+        --footer-background-color: rgb(15,53,65);
         --border-color: rgba(255, 255, 255, 0.1);
-    }
-
-    /* inverterer fargen til bildene i navbaren til nesten helt hvit */
-    /* developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
-    footer img {
-        filter: invert(0.95);
     }
 
     /* inverterer fargen til logoen i footeren */
