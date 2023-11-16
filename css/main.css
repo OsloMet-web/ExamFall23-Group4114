@@ -1,4 +1,4 @@
-/* farge variabler for enkel bytte til dark mode i media query */
+/* farge variabler for enkelt bytte til dark mode i media query */
 :root {
     --main-elemenet-color: rgba(187, 203, 207, 0.7);
     --main-text-color: rgb(0, 0, 0);
@@ -271,10 +271,10 @@ a:hover {
         --border-color: rgba(255, 255, 255, 0.1);
     }
 
-    /* inverterer fargen til bildene i navbaren til nesten helt hvit (dette ser kun bra ut hvis logoen er helt svart, som den er) */
+    /* inverterer fargen til bildene i navbaren til nesten helt hvit */
     /* developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
     footer img {
-        filter: invert();
+        filter: invert(0.95);
     }
 
     /* inverterer fargen til logoen i footeren */
