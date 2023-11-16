@@ -4,7 +4,6 @@
     --main-text-color: rgb(0, 0, 0);
     --main-background-color: rgb(229, 229, 229);
     --footer-background-color: rgb(20, 52, 64);
-    --footer-text-color: rgb(238, 238, 238);
     --navbar-highlight-color: rgba(234, 234, 234, 0.3);
     --border-color: rgba(0, 0, 0, 0.1);
 }
@@ -29,7 +28,7 @@ footer {
     justify-content: space-between;
     padding: 2rem;
     background-color: var(--footer-background-color);
-    color: var(--footer-text-color);
+    color: rgb(238, 238, 238);
 }
 
 /* footer: setter width på logoen */
