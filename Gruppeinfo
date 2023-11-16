@@ -17,10 +17,7 @@ Gruppeoppgaver
     nb! det grået i polaroid fucker med andre ting
 
     Stian
-    - logo i footer
-    - navbar over bilde
     - fikse navbar
-    - oversette navbaren
     - bytte ut div bilde i nav til picture
     - https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 
@@ -34,11 +31,10 @@ Gruppeoppgaver
     - gå over camelCase og bytt det ut det :D 
     - fjerne bilder som ikke brukes
     - bytte navn på filer
-    - footer skal ha sections? er ikke det til articles
     - ikke ha linjeskift i tekst det fakker over når vi leverer (skjer når vi formater dokumentet)
     - fjerne klasse som ikke er i bruk
-    - DARK MODE
     - STUDIESTEDER VÆRE SILLY
+    - width and height i img
     
 
 Kommentarer i koden
