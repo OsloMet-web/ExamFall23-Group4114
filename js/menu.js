@@ -1,14 +1,15 @@
-// JS only used for the burger menu
-// https://www.w3schools.com/js/
+// JS kun brukt til menyen
+// laget med tidligere js kunnskap og
+// https://stackoverflow.com/a/72823459
 
-// gets navbar-buttons (first element in returned array)
+// putter navbar-buttons fra html i en variabel (første elementet i arrayen)
 const navbarbuttons = document.getElementsByClassName("navbar-buttons")[0]
 
-// gets navbar-burgericon by its id
+// putter navbar-burgericon i en variabel fra IDen den har
 const burgericon = document.getElementById("navbar-burgericon")
 
-// adds event listener to the burger icon
-// when pressed it will toggle the navbar-buttons by running code in the css labeled with .active
+// legger til event listener på burger ikonet
+// når man trykker på burgeren toggler den navbar-buttons med å kjøre koden i css'en markert med .active
 burgericon.addEventListener('click', () => {
     navbarbuttons.classList.toggle('active')
 })
