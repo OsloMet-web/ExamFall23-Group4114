@@ -26,19 +26,22 @@ main {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
     background-color: var(--footer-background-color);
     color: rgb(238, 238, 238);
-}
-
-/* footer: setter width på logoen */
-footer section img {
-    width: 130px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
 }
 
 /* footer: tynnere tekst */
 footer section {
     font-weight: 300;
+}
+
+/* footer: setter width på logoen */
+footer section img {
+    width: 130px;
 }
 
 /* tekst formatering på time og address i footeren*/
@@ -47,11 +50,12 @@ footer time, footer address {
     font-style: normal;
 }
 
+/* fjerner strek under linker kun i footeren */
 footer a {
     text-decoration: none;
 }
 
-/* fjerner farger på linker */
+/* fjerner farger på alle linker */
 a, a:visited, a:active {
     color: inherit;
 }
@@ -102,19 +106,20 @@ a:hover {
     border-radius: 15px; 
 }
 
+/* høyde på bilder i navbaren */
 .navbar-container img {
-    height: 46px;
+    height: 45px;
 }
+
 .navbar-container a:hover {
     background-color: var(--navbar-highlight-color)
 }
-
 
 .current-active-tab {
     background-color: var(--navbar-highlight-color)
 }
 
-/* burger meny bilde (hidden on desktop) */
+/* burger meny til høyre (usynlig på store skjermer) */
 #navbar-burgericon {
     display: none;
     right: 0;
@@ -255,11 +260,6 @@ a:hover {
         display: none;
     }
 
-    #navbar-burgericon {
-        display: block;
-        position: absolute;
-    }
-
     .navbar-container {
         flex-direction: column;
         height: auto;
@@ -289,6 +289,11 @@ a:hover {
     /* setter elementene i section flex-boksene under hverandre så de har nok plass */
     .section-flex-container {
         flex-direction: column;
+    }
+
+    #navbar-burgericon {
+        display: block;
+        position: absolute;
     }
 }
 
