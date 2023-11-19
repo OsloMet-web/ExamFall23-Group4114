@@ -303,7 +303,7 @@ a:hover {
 @media (max-width: 800px){
 
     /* sjuler logoen i footer */
-    footer section img {
+    footer img {
         display: none;
     }
 
