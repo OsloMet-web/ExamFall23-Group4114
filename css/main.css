@@ -15,7 +15,7 @@ body {
     background-color: var(--main-background-color);
 }
 
-/* setter farge på teksten i main */
+/* farge på tekst i main + padding */
 main {
     color: var(--main-text-color);
     padding-left: 1.4rem;
@@ -63,16 +63,17 @@ a:hover {
 
 /* === navbar === */
 
+/* konteineren til navbaren */
 .navbar-container {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: fixed; /* navbaren holder seg alltid øverst */
     height: 50px;
     z-index: 1; /* navbar "høyere" enn andre elementer */
     top: 0.75rem; /* avstand fra toppen */
     left: 2rem; /* avstand fra venstre side */
     right: 1rem; /* avstand fra høyre side */
-    width: calc(100% - 4rem); /* setter width til 100% av body sin width minus 4rem */
+    max-width: calc(100% - 4rem); /* max-width til 100% av body sin width - 4rem */
     /* calc fra www.w3schools.com/cssref/func_calc.php */
 
     background-color: var(--main-elemenet-color);
@@ -82,7 +83,7 @@ a:hover {
     border-style: solid;
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* safari support til blur */
+    -webkit-backdrop-filter: blur(10px); /* safari support */
 }
 
 .navbar-container img {
