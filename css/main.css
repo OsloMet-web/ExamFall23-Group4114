@@ -234,6 +234,15 @@ a:hover {
     border-radius: 15px;
 }
 
+/* tekstbox med 0.3 i flex, brukt på hovedsiden */
+.section-text-thin-no-background {
+    flex: 0.3;
+    margin: 0.6rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+
 /* bilde som blir mindre og zoomer inn når får lite plass i flex */
 .section-image-resize {
     flex: 0.7;
