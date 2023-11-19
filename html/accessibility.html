@@ -49,8 +49,8 @@
     <main>
         <!-- hver section er en flex-box som skalerer elemenetene inni -->
         <section class="section-flex-container">
-            <!-- section-flex-text til kun tekst-->
-            <div class="section-flex-text">
+            <!-- section-text til kun tekst-->
+            <div class="section-text">
                 <h2>Hvordan fungerer Lighthouse</h2>
                 <p>Dette verktøyet hjelper oss med å oppdage mulige problemer og sørge for at nettstedet vårt forbedrer kvaliteten. Med Lighthouse gjennomgår vi nettstedets struktur, innhold og funksjonalitet med disse vurderingskriteriene: </p>
                 <ul>
@@ -68,7 +68,7 @@
 
         <section class="section-flex-container">
             <!-- bilde med forklaring og credit -->
-            <figure>
+            <figure class="section-image-static">
                 <img src="../pictures/lighthousebilde.webp" alt="Skjermbilde av nettleser sammen med Lighthouse der du ser Lightouse i bruk.">
                 <figcaption>
                     Eksempelbilde av hvordan bruk av Lighthouse ser ut. Bilde: eget
@@ -77,13 +77,13 @@
         </section>
 
         <section class="section-flex-container">
-            <div class="section-flex-text">
+            <div class="section-text">
                 <h2>Performance</h2>
                 <p>På en tilgjengelighetstest for index.html fikk vi 98 av 100 poeng i Performance. Første feilen involverer manglende bredde og lengde til bildeelementene. Etter å ha sett litt på det, så er bildene inni en div og ikke har behov for bredde og lengde. Dermed har vi latt å ikke gjøre noe med det. </p>
                 <p>Den andre feilen dreier seg om nettleserens lagring av kopier ved navigasjon, som ikke kan løses direkte med CSS eller HTML, men krever optimaliseringssjekk.</p>
             </div>
             <!-- bilde med forklaring og credit -->
-            <figure>
+            <figure class="section-image-resize">
                 <img src="../pictures/performance.png" alt="skjermbilde av performance-feilmelding fra lighthouse">
                 <figcaption>
                     Skjermbilde med Performance-eksempel fra nettsiden. Bilde: eget
@@ -92,12 +92,12 @@
         </section>
 
         <section class="section-flex-container">
-            <div class="section-flex-text">
+            <div class="section-text">
                 <h2>Accessibility</h2>
                 <p>På samme side på index.html viser vi også til tilgjengeligheten. Her fikk vi 93 av 100 poeng i Accessibility. I denne versjonen av nettsiden så mangler teksten som skal vises for brukeren som en klikkbar lenke. Greia er egentlig at det er et bilde som er lenken.</p>
             </div>
             <!-- bilde med forklaring og credit -->
-            <figure>
+            <figure class="section-image-resize">
                 <img src="../pictures/accessibility.png" alt="skjermbilde av accessibility-feilmelding fra lighthouse">
                 <figcaption>
                     Skjermbilde med Accessibility-eksempel fra nettsiden. Bilde: eget
@@ -106,12 +106,12 @@
         </section>
 
         <section class="section-flex-container">
-            <div class="section-flex-text">
+            <div class="section-text">
                 <h2>Best practices</h2>
                 <p>Vi holder oss på index.html, og her fikk vi 95 av 100 poeng i Best Practices.  Vi ønsket at gjeldene bilde skal passe en boks, og ser ikke behov for å beholde originalstørrelse da vi ikke får ønsket design.</p>                
             </div>
             <!-- bilde med forklaring og credit -->
-            <figure>
+            <figure class="section-image-resize">
                 <img src="../pictures/bestprac.png" alt="skjermbilde av best-practices-feilmelding fra lighthouse">
                 <figcaption>
                     Skjermbilde med "Best practices"-eksempel fra nettsiden. Bilde: eget
@@ -120,7 +120,7 @@
         </section>
 
         <section class="section-flex-container">
-            <div class="section-flex-text">
+            <div class="section-text">
                 <h2>SEO</h2>
                 <p> Det siste vurderingskriterie SEO nevner vi forbedringspotensiale med studieavbrekk.html. Det manglet en meta-beskrivelse som skyldtes at vi lot siden stå tom en stund før vi bestemte oss for hva innholdet skulle være, og glemte dermed å fylle ut meta-beskrivelsen i koden.</p>
                 <p> På siden accessibility.html fikk vi 90 av 100 poeng, primært fordi vi glemte å legge til alternativ tekst på et bilde. Dette er imidlertid en rask justering som vil bli gjort samtidig med synkroniseringen av denne teksten. (;</p>
@@ -128,7 +128,7 @@
             </div>
 
             <!-- bilde med forklaring og credit -->
-            <figure>
+            <figure class="section-image-resize">
                 <img src="../pictures/seo.png" alt="skjermbilde av SEO-feilmelding fra lighthouse">
                 <figcaption>
                     Skjermbilde med SEO-eksempel fra nettsiden. Bilde: eget
@@ -137,14 +137,14 @@
         </section>
 
         <section class="section-flex-container">
-            <div class="section-flex-text">
+            <div class="section-text">
                 <h2>Honorable Mention: PWA</h2>
                 <p>Vi tester ikke PWA fordi vi lager ikke "Progressive Web Apper" fordi det er ikke en del av pensum/oppgaven.</p>
             </div>
         </section>
 
         <section class="section-flex-container">
-            <div class="section-flex-text">
+            <div class="section-text">
                 <h2>VÅR ENDELIGE TILGJENGELIGHETSTEST</h2>
                 <p>Så, hvordan ser vår endelige tilgjengelighetstest ut? Jo, det er bare fortsette å scrolle så ser du den hvertøyeblikk. (:</p>
                 <p>Vi gir oss nemlig ikke før vi får top score og ingen nødvendige tilbakemeldinger gjenstår. </p>

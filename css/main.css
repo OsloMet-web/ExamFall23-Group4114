@@ -125,7 +125,7 @@ a:hover {
     right: 0;
 }
 
-/* gjør boksen til logoen rund */
+/* runder av boksen logoen er i */
 #p35-rounded {
     border-radius: 15px;
     padding-left: 5px;
@@ -204,39 +204,49 @@ a:hover {
     transform: scale(1.05);
 }
 
+/* === main structure === */
+
 /* container item with 0.4 flex */
-.container-item-slim {
-    flex: 0.4;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
 
 .section-flex-container {
     display: flex;
     padding-bottom: 4rem;
 }
 
-.section-flex-container figure {
+/* image that zooms in when too little space in flex */
+.section-image-resize {
     flex: 0.7;
     margin: 0.5rem;
 }
 
-.section-flex-container figure img {
+.section-image-resize img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
 }
 
-/* teksten under bildet */
-.section-flex-container figure figcaption {
+/* image that keeps all its content visible */
+.section-image-static {
+    flex: 1;
+    margin: 0.5rem;
+}
+
+.section-image-static img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* teksten under bildene */
+.section-image-resize figcaption, .section-image-static figcaption {
     position: relative;
     left: 5px;
     top: 2px;
     font-size: 0.8rem;
 }
 
-.section-flex-text {
+.section-text {
     flex: 1;
     margin: 10px;
     padding-left: 20px;
@@ -247,6 +257,12 @@ a:hover {
     border-style: solid;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
     background-color: var(--main-elemenet-color);
+}
+
+.container-item-slim {
+    flex: 0.4;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /*  === media query som aktiveres på mindre skjermer (width 710px eller mindre) === */
