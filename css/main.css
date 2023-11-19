@@ -253,7 +253,7 @@ a:hover {
 
 /*  === media query som aktiveres på mindre skjermer (width 710px eller mindre) === */
 
-@media (max-width: 710px){
+@media (max-width: 800px){
 
     /* sjuler logoen i footer */
     footer section img {
