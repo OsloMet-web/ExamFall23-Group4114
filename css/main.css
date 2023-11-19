@@ -18,8 +18,8 @@ body {
 /* farge på tekst i main + padding */
 main {
     color: var(--main-text-color);
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
 }
 
 /* footer: gjøres om til flexbox for å seksjonere elementene inni */
@@ -71,9 +71,9 @@ a:hover {
     height: 50px;
     z-index: 1; /* navbar "høyere" enn andre elementer */
     top: 0.75rem; /* avstand fra toppen */
-    left: 2rem; /* avstand fra venstre side */
-    right: 1rem; /* avstand fra høyre side */
-    max-width: calc(100% - 4rem); /* max-width til 100% av body sin width - 4rem */
+    left: 1rem; /* avstand fra venstre side */
+    right: 0.5rem; /* avstand fra høyre side */
+    max-width: calc(100% - 2rem); /* max-width til 100% av body sin width - 4rem */
     /* calc fra www.w3schools.com/cssref/func_calc.php */
 
     background-color: var(--main-elemenet-color);
@@ -86,6 +86,22 @@ a:hover {
     -webkit-backdrop-filter: blur(10px); /* safari support */
 }
 
+.navbar-buttons ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar-buttons ul li a {
+    display: block;
+    padding: 0.95rem;
+    color: var(--main-text-color);
+    text-decoration: none;
+    border-radius: 15px; 
+}
+
 .navbar-container img {
     height: 46px;
 }
@@ -93,22 +109,6 @@ a:hover {
     background-color: var(--navbar-highlight-color)
 }
 
-.navbar-buttons ul {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    padding-left: 0;
-}
-.navbar-buttons li {
-    list-style: none;
-}
-.navbar-buttons li a {
-    display: block;
-    padding: 0.95rem;
-    color: var(--main-text-color);
-    text-decoration: none;
-    border-radius: 15px; 
-}
 
 .current-active-tab {
     background-color: var(--navbar-highlight-color)
@@ -128,20 +128,25 @@ a:hover {
 
 /* === header === */
 
+/* header med padding alignet til teksten i main */
 .header-with-padding {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 6rem;
-    padding-bottom: 3rem;
     color: var(--main-text-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
 }
 
-/* no padding for homepage header and non changing color because of image */
+/* header uten padding, brukt til index pga bildet */
 .header-without-padding {
     padding: 0;
     color: rgb(255, 255, 255);
+    padding-bottom: 4rem;
 }
 
+/* === index.html === */
+
+/* index.html header tekst oppå bildet */
 .main-page-header-text {
     display: flex;
     flex-direction: column;
@@ -151,14 +156,12 @@ a:hover {
     padding-right: 3rem;
 }
 
-/* === index.html === */
-
+/* bildet holder seg alltid synlig + 30% mørkere for tekst synlighet */
 .main-page-image img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     filter: brightness(30%);
-    padding-bottom: 4rem;
 }
 
 .tekst-bilde-link a {
@@ -222,6 +225,7 @@ a:hover {
     object-fit: cover;
 }
 
+/* teksten under bildet */
 .section-flex-container figure figcaption {
     position: relative;
     left: 5px;
@@ -231,19 +235,18 @@ a:hover {
 
 .section-flex-text {
     flex: 1;
+    margin: 10px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
-    background-color: var(--main-elemenet-color);
-    margin: 10px;
     border-width: 1px;
     border-color: var(--border-color);
     border-style: solid;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.07);
+    background-color: var(--main-elemenet-color);
 }
 
-/*  === media query som aktiveres på mindre skjermer (710px eller mindre) === */
+/*  === media query som aktiveres på mindre skjermer (width 710px eller mindre) === */
 
 @media (max-width: 710px){
 
@@ -260,10 +263,9 @@ a:hover {
     .navbar-container {
         flex-direction: column;
         height: auto;
-        width: 90%;
     }
 
-    /* hides navbar links on mobile */
+    /* gjemmer navbar-knappene + de tar opp all width til når menyen åpnes*/
     .navbar-buttons{
         width: 100%;
         display: none;
@@ -279,25 +281,18 @@ a:hover {
         text-align: center;
     }
 
-    /* brukt med JS for å vise menyen når meny knappen er trykket */
+    /* brukt med JS for å vise menyen når burgeren er trykket */
     .navbar-buttons.active {
         display: block;
     }
 
-    /* fanen som er aktiv er lysere enn andre */
-    .current-actvie-tab {
-        background-color: rgba(0, 0, 0, 0)
-    }
-
-    /* bytter section flex-boksene til collumn så alt vises på mindre skjermer */
+    /* setter elementene i section flex-boksene under hverandre så de har nok plass */
     .section-flex-container {
         flex-direction: column;
-        max-height: 100%;
-        padding-bottom: 50px;
     }
 }
 
-/* dark-mode: bytter fargerene på siden hvis brukeren har dark-mode på enheten sin */
+/* bytter fargerene på siden hvis brukeren har på dark-mode på enheten sin */
 @media (prefers-color-scheme: dark) {
     /* bytter farge variablene fra lyse til mørke farger */
     :root {
