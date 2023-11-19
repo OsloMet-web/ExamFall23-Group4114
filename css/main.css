@@ -206,49 +206,15 @@ a:hover {
 
 /* === main structure === */
 
-/* container item with 0.4 flex */
-
 .section-flex-container {
     display: flex;
     padding-bottom: 4rem;
 }
 
-/* image that zooms in when too little space in flex */
-.section-image-resize {
-    flex: 0.7;
-    margin: 0.5rem;
-}
-
-.section-image-resize img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-/* image that keeps all its content visible */
-.section-image-static {
-    flex: 1;
-    margin: 0.5rem;
-}
-
-.section-image-static img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
-
-/* teksten under bildene */
-.section-image-resize figcaption, .section-image-static figcaption {
-    position: relative;
-    left: 5px;
-    top: 2px;
-    font-size: 0.8rem;
-}
-
+/* tekstbox med bakgrunn */
 .section-text {
     flex: 1;
-    margin: 10px;
+    margin: 0.6rem;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
@@ -259,10 +225,70 @@ a:hover {
     background-color: var(--main-elemenet-color);
 }
 
-.container-item-slim {
-    flex: 0.4;
-    padding-left: 1rem;
-    padding-right: 1rem;
+/* tekstbox uten bakgrunn */
+.section-text-no-background {
+    flex: 1;
+    margin: 0.6rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+
+/* bilde som blir mindre og zoomer inn når får lite plass i flex */
+.section-image-resize {
+    flex: 0.7;
+    margin: 0.6rem;
+}
+
+.section-image-resize img {
+    width: 100%;
+    height: 100%;
+    max-height: 18rem; /* så ikke tekst-boksene vedsiden av blir for store med white space */
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* bilde som alltid viser alt innhold (innhold viktig) */
+.section-image-static {
+    flex: 0.7;
+    margin: 0.6rem;
+}
+
+.section-image-static img {
+    width: 100%;
+    height: 100%;
+    max-height: 18rem; /* så ikke tekst-boksene vedsiden av blir for store med white space */
+    object-fit: scale-down /* gjør bildet mindre når for liten plass og beholder aspect ratio */
+    /* ingen border radius fordi alt innhold skal være synlig */
+}
+
+/* bilde som tar opp hele skjermen (innhold ikke viktig) */
+.section-image-big {
+    flex: 1;
+    margin: 0.5rem;
+}
+
+.section-image-big img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+/* teksten under bildet, plassert litt under of litt til høyre relativt til figure */
+.section-image-resize figcaption {
+    position: relative;
+    left: 5px;
+    top: 3px;
+    font-size: 0.8rem;
+}
+
+/* teksten midtstilt bildet, plassert litt under of litt til høyre relativt til figure */
+.section-image-big figcaption, .section-image-static figcaption {
+    position: relative;
+    left: 5px;
+    top: 3px;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 /*  === media query som aktiveres på mindre skjermer (width 710px eller mindre) === */
@@ -316,7 +342,7 @@ a:hover {
     /* bytter farge variablene fra lyse til mørke farger */
     :root {
         --main-elemenet-color: rgba(37, 45, 65, 0.7);
-        --main-text-color: rgb(243, 243, 243);
+        --main-text-color: rgb(243, 243, 243); /* blir for skarpt hvir den er helt hvit */
         --main-background-color: rgb(22 23 25);
         --navbar-highlight-color: rgba(167, 167, 167, 0.119);
         --footer-background-color: rgb(37, 45, 65, 0.7);
