@@ -176,7 +176,7 @@ a:hover {
 }
 
 .bilde-link-bakgrunn {
-    height: 250px;
+    height: 15rem;
     background-color: var(--main-elemenet-color);
     transition: transform 0.3s;
 
@@ -361,4 +361,3 @@ a:hover {
         filter: invert(0.95);
     }
 }
-
