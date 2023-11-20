@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+<!-- HTML-dokumentet følger HTML5-standarden og er på norsk -->
 <html lang="no">
 
 <head>
+    <!-- Meta tags for tegnsett, visningsinnstilling og beskrivelse for søkemotorer -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Forklaring av tilgjengelighetsvalg gjort under utvikling av nettsiden">
     <title>Tilgjengelighetstest</title>
     <link rel="stylesheet" href="../css/main.css">
-    <script src="../js/menu.js" defer></script> <!-- js til navbar meny knapp -->
+    <!-- javascript-fil til navigasjonsmeny-knapp -->
+    <script src="../js/menu.js" defer></script>
 </head>
 
 <body>
@@ -15,12 +18,13 @@
     <nav class="navbar-container">
         <!-- navbar nettside logo -->
         <a id="p35-rounded" href="../index.html">
-            <!-- bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo" -->
+            <!-- ørnen er hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo", med en personlig vri-->
             <img src="../pictures/eagle_new.webp" alt="nettstedets logo av en sort ørn med teksten tech-topia">
         </a>
 
         <!-- burgermeny ikon for mobil -->
         <picture id="navbar-burgericon">
+            <!-- burgermeny-bilde har vi laget selv -->
             <img src="../pictures/burger.webp" alt="burger icon which opens the website menu">
         </picture>
 
@@ -35,7 +39,7 @@
         </div>
     </nav>
 
-    <!-- topptekst -->
+    <!-- topptekst med tittel og beskrivelse av tilgjengelighetstest -->
     <header class="header-with-padding">
         <h1>Tilgjengelighetstest</h1>
         <!-- en del av teksten er hentet fra linken til Lighthouse, bare oversatt-->
@@ -45,6 +49,7 @@
     <!-- hoveddelen-->
     <main>
         <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon som forklarer hvordan Lighthouse fungerer -->
         <section class="section-flex-container">
             <!-- section-text til kun tekst-->
             <div class="section-text">
@@ -61,18 +66,19 @@
             </div>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon som viser bilde-eksempel og med bildekommentarer -->
         <section class="section-flex-container">
             <!-- bilde med forklaring og kilde-->
             <figure class="section-image-big">
                 <img src="../pictures/lighthousebilde.webp" alt="Skjermbilde av nettleser sammen med Lighthouse der du ser Lightouse i bruk.">
+                <!-- bildekommentar -->
                 <figcaption>
                     Eksempelbilde av hvordan bruk av Lighthouse ser ut. Bilde: eget
                 </figcaption>
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon som viser Performance-eksempel -->
         <section class="section-flex-container">
             <!-- section-text til kun tekst-->
             <div class="section-text">
@@ -83,13 +89,14 @@
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
                 <img src="../pictures/performance.webp" alt="skjermbilde av performance-feilmelding fra lighthouse">
+                <!-- bildekommentar -->
                 <figcaption>
                     Skjermbilde med Performance-eksempel fra nettsiden. Bilde: eget
                 </figcaption>
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon som viser Accessibility-eksempel -->
         <section class="section-flex-container">
             <!-- section-text til kun tekst-->
             <div class="section-text">
@@ -99,13 +106,14 @@
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
                 <img src="../pictures/accessibility.webp" alt="skjermbilde av accessibility-feilmelding fra lighthouse">
+                <!-- bildekommentar-->
                 <figcaption>
                     Skjermbilde med Accessibility-eksempel fra nettsiden. Bilde: eget
                 </figcaption>
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon som viser Best-practices-eksempel -->
         <section class="section-flex-container">
             <!-- section-text til kun tekst-->
             <div class="section-text">
@@ -115,13 +123,14 @@
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
                 <img src="../pictures/bestprac.webp" alt="skjermbilde av best-practices-feilmelding fra lighthouse">
+                <!-- bildekommentar -->
                 <figcaption>
                     Skjermbilde med "Best practices"-eksempel fra nettsiden. Bilde: eget
                 </figcaption>
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon som viser SEO-eksempel -->
         <section class="section-flex-container">
             <!-- section-text til kun tekst-->
             <div class="section-text">
@@ -134,13 +143,14 @@
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
                 <img src="../pictures/seo.webp" alt="skjermbilde av SEO-feilmelding fra lighthouse">
+                <!-- bildekommentar -->
                 <figcaption>
                     Skjermbilde med SEO-eksempel fra nettsiden. Bilde: eget
                 </figcaption>
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon som nevner PWA-->
         <section class="section-flex-container">
             <!-- section-text til kun tekst-->
             <div class="section-text">
@@ -149,7 +159,7 @@
             </div>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon om vår endelige tilgjengelighetstest-->
         <section class="section-flex-container">
             <!-- section-text til kun tekst-->
             <div class="section-text">
@@ -181,18 +191,18 @@
 
     <!-- footer for kontaktinfo og åpningstider -->
     <footer>
-        <!-- seksjon til kontaktinfo -->
+        <!-- seksjon for kontaktinformasjon -->
         <section>
             <h3>Kontakt oss</h3>
             <address>Email: <a href="mailto:noe@email.no">noe@email.no</a>
                 Telefon: <a href="tel:12345678">12345678</a>
             </address>
         </section>
-        <!-- logo -->
+        <!-- logo for nettsiden -->
         <picture>
             <img src="../pictures/eagle_black.webp" alt="website logo displaying p35 in big letters">
         </picture>
-        <!-- seksjon til åpningstider -->
+        <!-- seksjon for åpningstider -->
         <section>
             <h3>Åpningstider</h3>
             <time>Man - Fre: 10.00 - 12.00
