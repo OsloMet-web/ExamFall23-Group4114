@@ -202,7 +202,7 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* === main structure === */
+/* === main struktur === */
 
 .section-flex-container {
     display: flex;
@@ -241,7 +241,7 @@ a:hover {
     border-radius: 15px;
 }
 
-/* bilde som blir mindre og zoomer inn når får lite plass i flex */
+/* bilde som blir mindre og zoomer inn når det er for lite plass i flex */
 .section-image-resize {
     flex: 0.7;
     margin: 0.6rem;
@@ -265,7 +265,7 @@ a:hover {
     width: 100%;
     height: 100%;
     max-height: 18rem; /* så ikke tekst-boksene vedsiden av blir for store med white space */
-    object-fit: scale-down /* gjør bildet mindre når for liten plass og beholder aspect ratio */
+    object-fit: scale-down /* gjør bildet mindre når det er for liten plass og beholder aspect ratio */
     /* ingen border radius fordi alt innhold skal være synlig */
 }
 
@@ -281,7 +281,7 @@ a:hover {
     object-fit: scale-down;
 }
 
-/* teksten under bildet, plassert litt under of litt til høyre relativt til figure */
+/* teksten under bildet, plassert litt under og litt til høyre relativt til figure */
 .section-image-resize figcaption {
     position: relative;
     left: 5px;
@@ -289,7 +289,7 @@ a:hover {
     font-size: 0.8rem;
 }
 
-/* teksten midtstilt bildet, plassert litt under of litt til høyre relativt til figure */
+/* teksten midtstilt bildet, plassert litt under og litt til høyre relativt til figure */
 .section-image-big figcaption, .section-image-static figcaption {
     position: relative;
     left: 5px;
