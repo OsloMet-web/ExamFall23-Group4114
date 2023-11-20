@@ -1,4 +1,4 @@
-/* farge variabler for enkelt bytte til dark mode i media query */
+/* farger i variabler som brukes flere ganger som gjør det enkelt å bytte til dark mode i media query */
 :root {
     --main-elemenet-color: rgba(187, 203, 207, 0.7);
     --main-text-color: rgb(0, 0, 0);
@@ -15,7 +15,7 @@ body {
     background-color: var(--main-background-color);
 }
 
-/* farge på tekst i main + padding */
+/* farge på tekst i main + padding til main */
 main {
     color: var(--main-text-color);
     padding-left: 0.4rem;
@@ -39,9 +39,9 @@ footer section {
     font-weight: 300;
 }
 
-/* footer: setter width på logoen */
+/* setter width på logoen i footer */
 footer img {
-    width: 130px;
+    width: 8,125rem;
 }
 
 /* tekst formatering på time og address i footeren*/
