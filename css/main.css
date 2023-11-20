@@ -184,7 +184,7 @@ a:hover {
     border-style: solid;
 }
 
-/* Bjør at bildet passer innenfor boksen til bilde-link-bakgrunn */
+/* Gjør at bildet passer innenfor boksen til bilde-link-bakgrunn */
 
 .bilde-link {
     min-width: 100%;
