@@ -137,7 +137,7 @@ a:hover {
 .header-with-padding {
     color: var(--main-text-color);
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 25rem;
     padding-top: 6rem;
     padding-bottom: 4rem;
 }
@@ -305,6 +305,10 @@ a:hover {
     /* sjuler logoen i footer */
     footer img {
         display: none;
+    }
+
+    .header-with-padding {
+        padding-right: 4rem;
     }
 
     .navbar-container {
