@@ -1,29 +1,33 @@
 <!DOCTYPE html>
+<!-- HTML-dokumentet følger HTML5-standarden og er på norsk -->
 <html lang="no">
 
 <head>
+    <!-- meta tags for tegnsett, visningsinnstilling og beskrivelse for søkemotorer -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En introduksjon til programmering og hvordan det fungerer på en simplifisert måte.">
     <title>Topical</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/menu.js" defer></script> <!-- js til navbar meny knapp -->
+    <!-- javascript-fil til navigasjonsmeny-knapp -->
+    <script src="js/menu.js" defer></script> 
 </head>
 
 <body>
     <!-- navigasjonsbar -->
     <nav class="navbar-container">
         <!-- navbar nettside logo -->
-        <a class="p35-rounded" href="../index.html">
-            <!-- bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo" -->
+        <a class="p35-rounded" href="index.html">
+            <!-- ørnen er hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo", med en personlig vri-->
             <picture>
-                <img src="pictures/eagle_new.webp" alt="nettstedets logo av en sort ørn med teksten tech-topia">
+                <img src="pictures/eagle_new.webp" alt="Nettstedets logo av en sort ørn med teksten tech-topia">
             </picture>
         </a>
 
         <!-- burgermeny ikon for mobil -->
         <picture class="navbar-burgericon">
-            <img src="pictures/burger.webp" alt="burger icon which opens the website menu">
+            <!-- burgermeny-bilde har vi laget selv -->
+            <img src="pictures/burger.webp" alt="Burger icon which opens the website menu">
         </picture>
 
         <!-- navbar knapper -->
@@ -37,7 +41,7 @@
         </div>
     </nav>
 
-    <!-- topptekst -->
+    <!-- topptekst om emnet programering -->
     <header class="header-with-padding">
         <!-- kilde: https://www.cs.hioa.no/~evav/uvstoff/intro/progintro.html -->
         <h1><a a href="https://www.cs.hioa.no/~evav/uvstoff/intro/progintro.html">Topical om DAPE1400-1 23H Programmering</a></h1>
@@ -55,8 +59,10 @@
     <!-- tekst hentet fra "Kompendium i Programmering, Java" skrevet av Kjetil Grønning og Eva Hadler Vihovde -->
     <main>
         <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon med bare en tekstboks om introduksjon-->
         <section class="section-flex-container">
             <!-- section-text til kun tekst-->
+            <!-- tekstboks -->
             <div class="section-text">
                 <h2>Instruksjoner</h2>
                 <p>Alle disse er kjennetegnet ved at de beskriver en serie av instruksjoner som må utføres for å oppnå et bestemt resultat. Hovedforskjellen mellom disse og et program er i grunnen bare at i tilfellene ovenfor er det et menneske som skal utføre instruksjonene, mens det i tilfelle program er en datamaskin som skal utføre instruksjonene. Det er ikke noe i veien for at vi kan oppfatte de nevnte ting som programmer. Skal de virke etter hensikten, må de være skrevet i et språk som vi kan forstå. Det kan være vanlig norsk (eller tilsvarende), eventuelt supplert med noen spesialuttrykk. I tilfelle musikkstykke må vi bruke noteskrift.</p>
@@ -64,16 +70,16 @@
             </div>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon med en tekstboks og et bilde om maskinspråk -->
         <section class="section-flex-container">
-            <!-- section-text til kun tekst-->
+            <!-- tekstboks -->
             <div class="section-text">
                 <h2>Maskinspråk</h2>
                 <p>En datamaskin forstår ikke noen av de språk som er nevnt for arbeidsoppgavene på lista ovenfor. Et data-program må derfor skrives i et annet språk — et språk som datamaskinen er konstruert til å forstå. I ytterste konsekvens er datamaskinen bare konstruert til å forstå det som kalles maskinspråk og som er bygget opp av bare to tegn, samt grupperinger av slike. </p> 
                 <p>Vi mennesker pleier vanligvis å representere de to tegnene med tallene 0 og 1, og kalle disse for biter eller bits. (I virkeligheten svarer symbolene til at det enten går eller ikke går strøm i en elektrisk leder.) Det er imidlertid svært lite praktisk å skrive programmer uttrykt med bare 0 og 1, selv om det i prinsippet går an. Isteden er det konstruert såkalte programmeringsspråk. </p>
                 <p>Disse består av et lite utvalg av engelske ord, noen spesielle symboler (blant annet forskjellige typer parenteser og skilletegn), og bestemte regler for hvordan uttrykk kan bygges opp. Alt i alt gir det et språk som er mye enklere enn norsk, engelsk og et hvilket som helst annet "vanlig" språk.</p>
             </div>
-            <!-- bilde med credit -->
+            <!-- bilde med tekst og credit -->
             <figure class="section-image-resize">
                 <img src="pictures/javakopp.webp" alt="En kopp med kaffe på et bord.">
                 <!-- iStock photo, tatt av Alina Rosanova -->
@@ -83,9 +89,9 @@
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon med en tekstboks om java -->
         <section class="section-flex-container">
-            <!-- section-text til kun tekst-->
+            <!-- tekstboks -->
             <div class="section-text">
                 <h2>Java</h2>
                 <p>Vi skal bruke programmeringsspråket java. Det er nå til dags verdens mest brukte programmeringsspråk. Når et program skrevet i java utføres, eller "kjøres" som vi sier, må det først oversettes til maskinspråk, slik at datamaskinen kan forstå det.</p>
@@ -96,18 +102,18 @@
 
     <!-- footer for kontaktinfo og åpningstider -->
     <footer>
-        <!-- kontaktinfo -->
+        <!-- seksjon for kontaktinformasjon -->
         <section>
             <h3>Kontakt oss</h3>
             <address>Email: <a href="mailto:noe@email.no">noe@email.no</a>
                 Telefon: <a href="tel:12345678">12345678</a>
             </address>
         </section>
-        <!-- logo hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo" -->
+        <!-- logo for nettsiden -->
         <picture>
             <img src="pictures/eagle_black.webp" alt="website logo displaying p35 in big letters">
         </picture>
-        <!-- åpningstider -->
+        <!-- seksjon for åpningstider -->
         <section>
             <h3>Åpningstider</h3>
             <time>Man - Fre: 10.00 - 12.00

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+<!-- HTML-dokumentet følger HTML5-standarden og er på norsk -->
 <html lang="no">
 
 <head>
+    <!-- liten meta tags for tegnsett, visningsinnstilling og beskrivelse for søkemotorer -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En nettside om forskjellige studiesteder på OsloMet">
     <title>Studiesteder</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/menu.js" defer></script> <!-- js til navbar meny knapp -->
+    <!-- javascript-fil til navigasjonsmeny-knapp -->
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
@@ -15,15 +18,16 @@
     <nav class="navbar-container">
         <!-- navbar nettside logo -->
         <a class="p35-rounded" href="index.html">
-            <!-- bilde hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo" -->
+            <!-- ørnen er hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo", med en personlig vri-->
             <picture>
-                <img src="pictures/eagle_new.webp" alt="nettstedets logo av en sort ørn med teksten tech-topia">
+                <img src="pictures/eagle_new.webp" alt="Nettstedets logo av en sort ørn med teksten tech-topia">
             </picture>
         </a>
 
         <!-- burgermeny ikon for mobil -->
         <picture class="navbar-burgericon">
-            <img src="pictures/burger.webp" alt="burger icon which opens the website menu">
+            <!-- burgermeny-bilde har vi laget selv -->
+            <img src="pictures/burger.webp" alt="Burger icon which opens the website menu">
         </picture>
 
         <!-- navbar knapper -->
@@ -37,7 +41,7 @@
         </div>
     </nav>
 
-    <!-- topptekst -->
+    <!-- topptekst om studiesteder -->
     <header class="header-with-padding">
         <h1>Studiesteder i P35</h1>
         <p>Velkommen til den fortryllende og magiske verdenen av skjulte studieplasser ved OsloMet, et universitet som ikke bare er berømt for sine åpne studieområder, men også for de mystiske og eventyrlige stedene som nesten virker som om de er hentet rett ut fra sidene av en litterær eventyrbok.</p>
@@ -46,8 +50,10 @@
     <!-- hoveddel -->
     <main>
         <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon med tekstboks og bilde om datatorget -->
         <section class="section-flex-container">
-            <!-- section-text til kun tekst-->
+            <!-- section-text til kun tekst -->
+            <!-- tektboks -->
             <div class="section-text">
                 <h2>Datatorget</h2>
                 <p>På fjerde etasje har vi "Datatorget," som kan høres ut som et dystopisk samfunn i en sci-fi-roman. Her, midt blant det surrende lyset av dataskjermer og det pulserende hjertet av teknologi, finner teknologistudentene sitt andre hjem. Datamaskinene i Datatorget blir ikke bare maskiner her; de blir våre trofaste medstudenter, alltid klare til å hjelpe og veilede oss gjennom de komplekse kodespråkene og de mystiske algoritmene som vi studerer. En scene der ideer blir født, og innovasjon trives. Velkommen til Datatorget, hvor fremtiden blir kodet og datamaskiner blir dine beste læremestere.</p>
@@ -61,9 +67,9 @@
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon med tekstboks og bilde om lesesal -->
         <section class="section-flex-container">
-            <!-- section-text til kun tekst-->
+            <!-- tekstboks-->
             <div class="section-text">
                 <h2>Stillhet?</h2>
                 <p>Hvis du er en fan av stillhet og en frodig atmosfære, kan du ta turen til "Stillesalen" på første etasje. Det er ikke bare et studiested; det er et tempel for ro og fordybelse. Her hvisker bøkene hemmelighetene til universet til deg, og selv støvet tørker tårene dine når du står fast i pensum.</p>
@@ -77,9 +83,9 @@
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon med tesktboks og bilde om biblioteket -->
         <section class="section-flex-container">
-            <!-- section-text til kun tekst-->
+            <!-- tekstboks-->
             <div class="section-text">
                 <h2>Biblioteket</h2>
                 <p>For eventyrlystne sjeler, er tredje etasje universitetets skattekiste. Utforsk bibliotekets ulike avdelinger, og du vil finne skjulte studiehuler som kan føles som du går gjennom en magisk portal til en annen verden. Kanskje, akkurat der, vil du finne svaret på mysteriet om hvor sokkene dine forsvinner.</p>
@@ -93,16 +99,16 @@
             </figure>
         </section>
 
-        <!-- hver section er en flex-box som skalerer elemenetene inni -->
+        <!-- seksjon med tekstboks og bile om toalettet -->
         <section class="section-flex-container">
-            <!-- section-text til kun tekst-->
+            <!-- tekstboks -->
             <div class="section-text">
                 <h2>Toalettet</h2>
                 <p>Og nå til det mest uventede stedet: toalettet i underetasjen. Dette er det eneste toalettet i universitetshistorien som virker som en tidsmaskin. Du går inn for en kort pause og kommer ut som en ny og opplyst person. Vi er ikke helt sikre på hva som skjer der inne, men vi har en mistanke om at det er et portal til en annen dimensjon.</p>
             </div>
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-resize">
-                <img src="pictures/toalett-vanlig.webp" alt="">
+                <img src="pictures/toalett-vanlig.webp" alt="Bilde av toalettet i kjelleren til P35">
                 <figcaption>
                     Toalettet i underetasjen. Foto: eget
                 </figcaption>
@@ -112,18 +118,18 @@
 
     <!-- footer for kontaktinfo og åpningstider -->
     <footer>
-        <!-- kontaktinfo -->
+        <!-- seksjon for kontaktinformasjon -->
         <section>
             <h3>Kontakt oss</h3>
             <address>Email: <a href="mailto:noe@email.no">noe@email.no</a>
                 Telefon: <a href="tel:12345678">12345678</a>
             </address>
         </section>
-        <!-- logo hentet fra canva.com, laget av Social Advizer kalt "Red Egle Gaming Free Logo" -->
+        <!-- logo for nettsiden -->
         <picture>
             <img src="pictures/eagle_black.webp" alt="website logo displaying p35 in big letters">
         </picture>
-        <!-- åpningstider -->
+        <!-- seksjon for åpningstider -->
         <section>
             <h3>Åpningstider</h3>
             <time>Man - Fre: 10.00 - 12.00
