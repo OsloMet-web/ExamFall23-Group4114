@@ -120,13 +120,13 @@ a:hover {
 }
 
 /* burger meny til høyre (usynlig på store skjermer) */
-#navbar-burgericon {
+.navbar-burgericon {
     display: none;
     right: 0;
 }
 
 /* runder av boksen logoen er i */
-#p35-rounded {
+.p35-rounded {
     border-radius: 15px;
     padding-left: 5px;
 }
@@ -351,7 +351,7 @@ a:hover {
         flex-direction: column;
     }
 
-    #navbar-burgericon {
+    .navbar-burgericon {
         display: block;
         position: absolute;
     }
