@@ -122,6 +122,7 @@ a:hover {
 /* burger meny til høyre (usynlig på store skjermer) */
 .navbar-burgericon {
     display: none;
+    cursor: pointer; /* i tilfelle du bruker mus på mobilen din */
     right: 0;
 }
 
