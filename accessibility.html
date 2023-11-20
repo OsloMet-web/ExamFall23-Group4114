@@ -85,8 +85,9 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>Performance</h2>
-                <p>På en tilgjengelighetstest for index.html fikk vi 98 av 100 poeng i Performance. Første feilen involverer manglende bredde og lengde til bildeelementene. Etter å ha sett litt på det, så er bildene inni en div og ikke har behov for bredde og lengde. Dermed har vi latt å ikke gjøre noe med det. </p>
-                <p>Den andre feilen dreier seg om nettleserens lagring av kopier ved navigasjon, som ikke kan løses direkte med CSS eller HTML, men krever optimaliseringssjekk.</p>
+                <p>På tilgjengelighetstesten for index.html fikk vi 98 av 100 poeng i Performance.</p> 
+                <p>Første feilen involverer manglende bredde og lengde til bildeelementene. Det er fordi bildene er inni en div og har ikke behov for bredde og lengde. Vi gjør derfor ingen endringer på det</p>
+                <p>Den andre feilen dreier seg om nettleserens lagring av kopier ved navigasjon. Dette kan ikke løses direkte med CSS eller HTML, men krever optimaliseringssjekk.</p>
             </div>
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
@@ -103,7 +104,8 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>Accessibility</h2>
-                <p>På samme side på index.html viser vi også til tilgjengeligheten. Her fikk vi 93 av 100 poeng i Accessibility. I denne versjonen av nettsiden så var tanken at bilde skulle være lenken, men det ble kluss ved bruk av div. Så da endte vi med å ta bare teksten "Les mer" som lenke.</p>
+                <p>På index.html fikk vi 93 av 100 poeng i Accessibility. Det var en feil ved linken til bilde-snarveiene "les mer om ..." hvor det var en href i div bilde-bakgrunn og ikke bare til p-elementet.</p>
+                <p>Derfor ble det markerte testen at det ar et tomt referanse område, noe som hadde vært upresist for de som bruker assisterende funksjoner</p>
             </div>
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
@@ -120,7 +122,7 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>Best practices</h2>
-                <p>Vi holder oss på index.html, og her fikk vi 95 av 100 poeng i Best Practices.  Vi ønsket at gjeldene bilde skal passe en boks, og ser ikke behov for å beholde originalstørrelse da vi ikke får ønsket design.</p>                
+                <p>Videre på index.html fikk vi 95 av 100 poeng i Best Practices. Vi ønsket at gjeldene bilde skal passe en boks, og ser derfor ikke behov for å beholde originalstørrelse da vi ikke får ønsket design.</p>                
             </div>
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
@@ -137,9 +139,9 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>SEO</h2>
-                <p> Det siste vurderingskriterie SEO nevner vi forbedringspotensiale med studieavbrekk.html. Det manglet en meta-beskrivelse som skyldtes at vi lot siden stå tom en stund før vi bestemte oss for hva innholdet skulle være, og glemte dermed å fylle ut meta-beskrivelsen i koden.</p>
-                <p> På siden accessibility.html fikk vi 90 av 100 poeng, primært fordi vi glemte å legge til alternativ tekst på et bilde. Dette er imidlertid en rask justering som vil bli gjort samtidig med synkroniseringen av denne teksten. (;</p>
-                <p> åre øvrige HTML-filer bruker semantiske elementer korrekt, for eksempel ved å anvende "nav" for navigasjonsknapper, "header" for toppteksten, "main" for hovedteksten, og "footer" for bunnteksten. Dette bidrar til en bedre forståelse for søkemotorer, øker lesbarheten, og forbedrer den generelle strukturen på nettstedet. <p>
+                <p>For SEO til studieavbrekk.html manglet en meta-beskrivelse ved tidspunktet da testen ble gjennomført. En bra metabeskrivelse gjør det lettere for nettleserene å vise siden riktig og dukke opp riktig i søkemotorer</p>
+                <p>På siden accessibility.html fikk vi 90 av 100 poeng på grunn av manglende alternativ tekst på bildet. Ved å legge til alternativ tekst vil siden bli mer tilgjenglig dersom bildet ikke lastes inn.</p>
+                <p>Våre øvrige HTML-filer inkluderer semantiske elementer, for eksempel ved å anvende "nav" for navigasjonsknapper, "header" for toppteksten, "main" for hovedteksten, og "footer" for bunnteksten. Dette konkretiserer de ulike rollene innholdet på nettsiden har både for andre utviklere og funksjonene til nettleseren.<p>
             </div>
 
             <!-- bilde med forklaring og kilde -->
@@ -156,8 +158,8 @@
         <section class="section-flex-container">
             <!-- tekstboks -->
             <div class="section-text">
-                <h2>Honorable Mention: PWA</h2>
-                <p>Vi tester ikke PWA fordi vi lager ikke "Progressive Web Apper" fordi det er ikke en del av pensum/oppgaven.</p>
+                <h2>PWA</h2>
+                <p>Tester ikke PWA fordi nettsiden ikke skal ha en app. En PWA applikasjon </p>
             </div>
         </section>
 
@@ -166,7 +168,7 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>VÅR ENDELIGE TILGJENGELIGHETSTEST</h2>
-                <p>Så, hvordan ser vår endelige tilgjengelighetstest ut? Jo, det er bare fortsette å scrolle så ser du den hvertøyeblikk. (:</p>
+                <p>Så, hvordan ser vår endelige tilgjengelighetstest ut? Jo, det er bare fortsette å scrolle så ser du den hvertøyeblikk.</p>
                 <p>Vi gir oss nemlig ikke før vi får top score og ingen nødvendige tilbakemeldinger gjenstår.</p>
             </div>
         </section>
