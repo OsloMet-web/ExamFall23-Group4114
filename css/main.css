@@ -158,7 +158,7 @@ a:hover {
     position: absolute;
     top: 8rem; /* for å plassere header teksten under navbaren */
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 25rem;
 }
 
 /* bildet holder seg alltid synlig + 30% mørkere for tekst synlighet */
@@ -308,6 +308,10 @@ a:hover {
     }
 
     .header-with-padding {
+        padding-right: 4rem;
+    }
+    
+    .main-page-header-text {
         padding-right: 4rem;
     }
 
