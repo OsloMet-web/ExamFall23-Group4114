@@ -170,12 +170,11 @@ a:hover {
     filter: brightness(30%);
 }
 
-/* En box model for html elementene til å lage en visuell link */
-
+/* en box model for html elementene til å lage en visuell link */
 .bilde-link-bakgrunn {
     height: 15rem;
     background-color: var(--main-elemenet-color);
-    transition: transform 0.3s; /* Gir en gradvis overgang for når du holder over boksen */
+    transition: transform 0.3s; /* gir en gradvis overgang for når du holder over boksen */
 
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -185,8 +184,7 @@ a:hover {
     border-style: solid;
 }
 
-/* Gjør at bildet passer innenfor boksen til bilde-link-bakgrunn */
-
+/* gjør at bildet passer innenfor boksen til bilde-link-bakgrunn */
 .bilde-link {
     min-width: 100%;
     max-height: 170px;
@@ -203,7 +201,7 @@ a:hover {
     padding: 20px;
 }
 
-/* Utvider boksen når man holder over boksen */
+/* utvider boksen når man holder over boksen */
 .bilde-link-bakgrunn:hover {
     transform: scale(1.05);
 }
