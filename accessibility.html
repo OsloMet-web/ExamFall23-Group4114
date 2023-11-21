@@ -57,14 +57,14 @@
                     Med Lighthouse gjennomgår vi nettstedets struktur, innhold og funksjonalitet med disse vurderingskriteriene: </p>
                 <ul>
                     <li>Performance: Måler ytelse og finner muligheter for å øke hastigheten på sideinnlastingen.</li>
-                    <li>Accessiblity: Kan alle brukere få tilgang til innhold og navigere på nettstedet ditt effektivt?</li>
-                    <li>Best Practices: Forbedre «kodehelsen» til nettsiden din ved å følge følgende «..» for beste fremgangsmåtene.</li>
-                    <li>SEO: Hvor godt kan søkemotorer forstå innholdet ditt?</li>
-                    <li>PWA: Mål om nettstedet ditt er raskt, pålitelig og installerbart.</li>
+                    <li>Accessiblity: Om alle kan få tilgang til innhold og navigere på nettstedet ditt effektivt.</li>
+                    <li>Best Practices: de beste fremgangsmåtene under skriving av koden.</li>
+                    <li>SEO: Search engine optimalisation. Hvor godt kan søkemotorer forstå innholdet ditt.</li>
+                    <li>PWA: Mål om nettstedet ditt er raskt, pålitelig og installerbart som en progressive web app.</li>
                 </ul>
                 <p>Derfra kan du bruke vurderingene som veiledning til å forbedre siden. Du vil motta et dokument som forteller hva 
-                    er galt, samt hvordan det kan fikses. Videre, har vi lagt hvert vurderingskriteriene for seg selv sammen med et 
-                    eksempel fra lighthouse og hva vi har gjort etter for å få ordnet det.</p>
+                    er galt, samt hvordan det kan fikses.</p>
+                <p>Vi tester alle html filene våre men viser kun index.html i denne rapporten.</p>
             </div>
         </section>
 
@@ -85,17 +85,18 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>Performance</h2>
-                <h3>Desktop</h3>
-                <p>På tilgjengelighetstesten for index.html fikk vi 100 av 100</p> 
-                <p>Relevante feil vi fikk var at lengde og bredde ikke er definert noe som 
-                    ikke er nødvendig siden de skaleres i en konteiner</p>
-                <h3>Mobil</h3>
-                <p>Head. </p>
-                <p></p>
+                <h3>Desktop - 100/100</h3>
+                <p>Relevante feil:</p> 
+                <p>Vi fikk var at lengde og bredde ikke er definert, noe som er 
+                    uødvendig siden de skaleres i en konteiner</p>
+                <p>Det ble brukt picture og source elementer for å bytte mellom bilde størrelser, for mest performance.</p>
+                <h3>Mobil - 97/100</h3>
+                <p>Relevante feil:</p>
+                <p>Noen bilder er større enn de trengs, men vi velger å ha det sånn for renere kode, fordi det gir lite gevinst i performance.</p>
             </div>
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
-                <img src="pictures/performance.webp" alt="skjermbilde av performance-feilmelding fra lighthouse">
+                <img src="pictures/performance-desktop.webp" alt="skjermbilde av performance-feilmelding fra lighthouse">
                 <!-- bildekommentar -->
                 <figcaption>
                     Skjermbilde med Performance-eksempel fra nettsiden. Bilde: eget
@@ -107,15 +108,23 @@
         <section class="section-flex-container">
             <!-- tekstboks -->
             <div class="section-text">
-                <h2>Accessibility</h2>
-                <p>På index.html fikk vi 93 av 100 poeng i Accessibility. Det var en feil ved linken til bilde-snarveiene "les mer om ..." 
-                    hvor det var et a-element i div bilde-bakgrunn og ikke bare til p-elementet.</p>
-                <p>Derfor markerte testen at det var et manglende link, noe som hadde vært upresist for de som bruker 
-                    assisterende funksjoner</p>
+                <h2>Tilgjengelighet</h2>
+                <h3>Desktop - 100/100</h3>
+                <p>Relevante feil: ingen.</p>
+                <p>Design-valg: For å opprettholde tilgjengelighet for alle brukere, inkl de med skjerm-lesere, har vi:</p>
+                <ul>
+                    <li>Brukt "alt" og "aria-label" på alle bilder og relevante elementer.</li>
+                    <li>Brukt semantic elements der mulig.</li>
+                    <li>Opprettholdet kontrast standarer for å gjøre siden lettlest.</li>
+                    <li>Optimalisert til å skalere seg, uansett skjermstørrelse, der alt er synlig.</li>
+                </ul>
+                <h3>Mobil - 100/100</h3>
+                <p>Relevante feil: ingen.</p>
+                </ul>
             </div>
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
-                <img src="pictures/accessibility.webp" alt="skjermbilde av accessibility-feilmelding fra lighthouse">
+                <img src="pictures/accessibility-desktop.webp" alt="skjermbilde av accessibility-feilmelding fra lighthouse">
                 <!-- bildekommentar-->
                 <figcaption>
                     Skjermbilde med Accessibility-eksempel fra nettsiden. Bilde: eget
@@ -128,12 +137,19 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>Best practices</h2>
-                <p>Videre på index.html fikk vi 95 av 100 poeng i Best Practices. Vi ønsket at gjeldene bilde skal passe en boks, og ser 
-                    derfor ikke behov for å beholde originalstørrelse da vi ikke får ønsket design.</p>                
+                <h3>Desktop - 100/100</h3>
+                <p>Design-valg:</p>
+                <ul>
+                    <li>Brukt DOCTYPE</li>
+                    <li>Bilder har riktig aspect ratio</li>
+                    <li>Definert riktig charset</li>
+                </ul>
+                <h3>Mobil - 100/100</h3>   
+                <p>Lik som desktop.</p>           
             </div>
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
-                <img src="pictures/bestprac.webp" alt="skjermbilde av best-practices-feilmelding fra lighthouse">
+                <img src="pictures/best-practices-desktop.webp" alt="skjermbilde av best-practices-feilmelding fra lighthouse">
                 <!-- bildekommentar -->
                 <figcaption>
                     Skjermbilde med "Best practices"-eksempel fra nettsiden. Bilde: eget
@@ -146,18 +162,24 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>SEO</h2>
-                <p>For SEO til studieavbrekk.html manglet en meta-beskrivelse ved tidspunktet da testen ble gjennomført. En bra 
-                    metabeskrivelse gjør det lettere for nettleserene å vise siden riktig og dukke opp riktig i søkemotorer</p>
-                <p>På siden accessibility.html fikk vi 90 av 100 poeng på grunn av manglende alternativ tekst på bildet. Ved å legge til 
-                    alternativ tekst vil siden bli mer tilgjenglig dersom bildet ikke lastes inn.</p>
-                <p>Våre øvrige HTML-filer inkluderer semantiske elementer, for eksempel ved å anvende "nav" for navigasjonsknapper, 
-                    "header" for toppteksten, "main" for hovedteksten, og "footer" for bunnteksten. Dette konkretiserer de ulike rollene 
-                    innholdet på nettsiden har både for andre utviklere og funksjonene til nettleseren.<p>
+                <h3>Desktop - 100/100</h3>
+                <p>Design-valg:</p>
+                <ul>
+                    <li>Brukt meta description for å forklare hva nettsiden går ut på, og en meta viewport som skalerer nettsiden til enheten.</li>
+                    <li>Brukt title element for tittel.</li>
+                    <li>Gitt forklaringstekster til linker.</li>
+                    <li>Brukt semantic elements der mulig, f.eks nav, header, main, footer, etc.</li>
+                    <li>Brukt heading elementer</li>
+                    <li>Bilder har alt descriptions.</li>
+                    <li>Optimalisert innlastnings-hastigheten på nettsiden.</li>
+                </ul>
+                <h3>Mobil - 100/100</h3>
+                <p>Lik som desktop.</p>
             </div>
 
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
-                <img src="pictures/seo.webp" alt="skjermbilde av SEO-feilmelding fra lighthouse">
+                <img src="pictures/SEO-desktop.webp" alt="skjermbilde av SEO-feilmelding fra lighthouse">
                 <!-- bildekommentar -->
                 <figcaption>
                     Skjermbilde med SEO-eksempel fra nettsiden. Bilde: eget
@@ -170,37 +192,28 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>PWA</h2>
-                <p>Tester ikke PWA fordi nettsiden ikke bruker JavaScript for å kunne støtte PWA.</p>
+                <p>Tester ikke PWA fordi progressive web apps er ikke i pensum.</p>
             </div>
         </section>
 
-        <!-- seksjon om vår endelige tilgjengelighetstest-->
-        <section class="section-flex-container">
-            <!-- tekstboks -->
-            <div class="section-text">
-                <h2>Videre om tilgjengelighet</h2>
-                <p>Her viser testen 100% på alle punkter.</p>
-                <p>Utover det testen kan vise oss kan vi utforme struktur og styling til å være lett tilgjenglig.</p>
-                <p>F.eks ved justering av lengden på teksten på ulike skjermer og fargebruk for lettere lesbarhet for ulike omgivelser.</p>
-            </div>
-        </section>
+
 
         <!-- bilder av den endelige tilgjengelighetstesten -->
         <section class="section-flex-container">
             <!-- bilde 1-->
             <figure class="section-image-big">
-                <img src="pictures/accessbilde1.webp" alt="Skjermbilde av farger side 1 av 4">
-                <figcaption>Del 1</figcaption>
+                <img src="pictures/oppsummering-1.webp" alt="Skjermbilde av farger side 1 av 4">
+                <figcaption>Del 1 av hele testen</figcaption>
             </figure>
             <!-- bilde 2-->
             <figure class="section-image-big">
-                <img src="pictures/accessbilde2.webp" alt="Skjermbilde av farger side 2 av 4">
-                <figcaption>Del 2</figcaption>
+                <img src="pictures/oppsummering-2.webp" alt="Skjermbilde av farger side 2 av 4">
+                <figcaption>Del 2 av hele testen</figcaption>
             </figure>
             <!-- bilde 3-->
             <figure class="section-image-big">
-                <img src="pictures/accessbilde3.webp" alt="Skjermbilde av farger side 3 av 4">
-                <figcaption>Del 3</figcaption>
+                <img src="pictures/oppsummering-3.webp" alt="Skjermbilde av farger side 3 av 4">
+                <figcaption>Del 3 av hele testen</figcaption>
             </figure>
         </section>
     </main>
