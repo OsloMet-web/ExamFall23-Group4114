@@ -65,7 +65,7 @@ a:hover {
     color: rgb(99, 153, 174);
 }
 
-/* button brukt til burger-menyen */
+/* fjerner standard styling fra knapper som blir brukt i navbare */
 button {
     background: none;
     border: none;
