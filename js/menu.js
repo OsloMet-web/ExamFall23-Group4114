@@ -10,7 +10,8 @@ const navbarbuttons = document.getElementsByClassName("navbar-buttons")[0]
 const burgericon = document.getElementsByClassName("navbar-burgericon")[0]
 
 // legger til event listener på burger ikonet
-// når man trykker på burgeren toggler den navbar-buttons med å kjøre koden i css'en markert med .active
+// når man trykker på burgeren toggler den koden i CSSen markert med .active under korresponderende klasse
 burgericon.addEventListener('click', () => {
     navbarbuttons.classList.toggle('active')
+    burgericon.classList.toggle('active')
 })

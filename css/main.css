@@ -65,6 +65,12 @@ a:hover {
     color: rgb(99, 153, 174);
 }
 
+/* button brukt til burger-menyen */
+button {
+    background: none;
+    border: none;
+}
+
 /* === navbar === */
 
 /* konteineren til navbaren */
@@ -358,6 +364,10 @@ a:hover {
         display: block;
         position: absolute;
     }
+
+    .navbar-burgericon.active {
+        background-image: url(../pictures/burger-kryss.webp);
+    }
 }
 
 /* bytter fargerene på siden hvis brukeren har på dark-mode på enheten sin */
@@ -374,6 +384,10 @@ a:hover {
 
     /* inverterer fargen til logoen i footeren */
     .navbar-container img {
+        filter: invert(0.95);
+    }
+
+    .navbar-burgericon {
         filter: invert(0.95);
     }
 }
