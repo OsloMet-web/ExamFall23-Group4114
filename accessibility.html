@@ -85,11 +85,12 @@
             <!-- tekstboks -->
             <div class="section-text">
                 <h2>Performance</h2>
-                <p>På tilgjengelighetstesten for index.html fikk vi 98 av 100 poeng i Performance.</p> 
-                <p>Første feilen involverer manglende bredde og lengde til bildeelementene.
-                    Det er fordi bildene er inni en div og har ikke behov for bredde og lengde. Vi gjør derfor ingen endringer på det</p>
-                <p>Den andre feilen dreier seg om nettleserens lagring av kopier for raskere innhenting av siden ved navigasjon mellom de ulike sidene.
-                    Siden nettsiden åpnes lokalt støtter ikke WebSocket dette.</p>
+                <p>På tilgjengelighetstesten for index.html fikk vi 98 av 100 poeng i Performance når vi bruker 
+                    en PC skjerm og 100 av 100 poeng på en mobilskjerm.</p> 
+                <p>Feilen som inngår pc-skjermen involverer manglende bredde og lengde til img-elementene.
+                    Det er fordi bildene er inni en konteiner og har derfor ikke behov for bredde 
+                    og lengde. Dette er hvorfor vi ikke gjør noen endringer på det</p>
+                <p>På en mobilskjerm er hovedproblemet at det øverste bildet er veldig stort. </p>
             </div>
             <!-- bilde med forklaring og kilde -->
             <figure class="section-image-static">
