@@ -269,20 +269,6 @@ button {
     object-fit: cover;
 }
 
-/* bilde som alltid viser alt innhold (innhold viktig) */
-.section-image-static {
-    flex: 0.7;
-    margin: 0.6rem;
-}
-
-.section-image-static img {
-    width: 100%;
-    height: 100%;
-    max-height: 18rem; /* så ikke tekst-boksene vedsiden av blir for store med white space */
-    object-fit: scale-down /* gjør bildet mindre når det er for liten plass og beholder aspect ratio */
-    /* ingen border radius fordi alt innhold skal være synlig */
-}
-
 /* bilde som tar opp hele skjermen (innhold ikke viktig) */
 .section-image-big {
     flex: 1;
@@ -304,7 +290,7 @@ button {
 }
 
 /* teksten midtstilt bildet, plassert litt under og litt til høyre relativt til figure */
-.section-image-big figcaption, .section-image-static figcaption {
+.section-image-big figcaption {
     position: relative;
     left: 5px;
     top: 3px;
