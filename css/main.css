@@ -34,7 +34,7 @@ footer {
     padding-bottom: 1rem;
 }
 
-/* footer: tynnere tekst */
+/* tynnere tekst i footer */
 footer section {
     font-weight: 300;
 }
@@ -71,7 +71,7 @@ button {
     border: none;
 }
 
-/* === navbar === */
+/* === navigasjonsbar === */
 
 /* konteineren til navbaren */
 .navbar-container {
@@ -96,6 +96,7 @@ button {
     -webkit-backdrop-filter: blur(10px); /* safari support */
 }
 
+/* unordered list som brukes til knappene i navbar */
 .navbar-buttons ul {
     display: flex;
     flex-direction: row;
@@ -104,6 +105,7 @@ button {
     list-style: none;
 }
 
+/* linkene i navbar */
 .navbar-buttons ul li a {
     display: block;
     padding: 0.95rem;
@@ -133,7 +135,7 @@ button {
     background-size: cover;
     display: none;
     cursor: pointer; /* for å vise at du alltid kan velge burgermenyen, uansett skjermstørrelse */
-    right: 0;
+    right: 0; /* plasserer knappen helt til høyre */
 }
 
 /* runder av boksen logoen er i */
@@ -206,18 +208,20 @@ button {
     text-decoration: none;
 }
 
+/* linken under bildet */
 .snarvei-link{
     text-align: center;
     padding: 20px;
 }
 
-/* utvider boksen når man holder over boksen */
+/* utvider boksen når man holder over den */
 .snarvei:hover {
     transform: scale(1.05);
 }
 
 /* === main struktur === */
 
+/* en seksjon */
 .section-flex-container {
     display: flex;
     padding-bottom: 4rem;
@@ -246,7 +250,7 @@ button {
     border-radius: 15px;
 }
 
-/* tekstbox med 0.3 i flex, brukt på hovedsiden */
+/* tynnere tekstbox med 0.3 i flex, brukt på hovedsiden */
 .section-text-thin-no-background {
     flex: 0.3;
     margin: 0.6rem;
@@ -264,12 +268,11 @@ button {
 .section-image-resize img {
     width: 100%;
     height: 18rem;
-    /* max-height: 18rem; så ikke tekst-boksene ved siden av blir for store med tomrom */
     border-radius: 15px;
     object-fit: cover;
 }
 
-/* bilde som tar opp hele skjermen (innhold ikke viktig) */
+/* bilde som alltid viser hele innholder */
 .section-image-big {
     flex: 1;
     margin: 0.5rem;
@@ -307,14 +310,17 @@ button {
         display: none;
     }
 
+    /* justerer padding for mobil */
     .header-with-padding {
         padding-right: 4rem;
     }
     
+    /* justerer padding for mobil */
     .main-page-header-text {
         padding-right: 4rem;
     }
 
+    /* bytter navbar knappene til å ligge under hverandre */
     .navbar-container {
         flex-direction: column;
         height: auto;
@@ -346,11 +352,13 @@ button {
         flex-direction: column;
     }
 
+    /* viser burger menyen på mobil */
     .navbar-burgericon {
         display: block;
         position: absolute;
     }
 
+    /* bytter til en X når menyen er trykket */
     .navbar-burgericon.active {
         background-image: url(../pictures/burger-kryss.webp);
     }
@@ -373,6 +381,7 @@ button {
         filter: invert(0.95);
     }
 
+    /* inverterer fargent til burger knappen */
     .navbar-burgericon {
         filter: invert(0.95);
     }
